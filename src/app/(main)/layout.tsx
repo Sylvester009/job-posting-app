@@ -26,10 +26,7 @@ export default function MainLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -48,7 +45,6 @@ export default function MainLayout({
             {children}
           </SidebarProvider>
         </ThemeProvider>
-      </body>
-    </html>
+     
   );
 }
