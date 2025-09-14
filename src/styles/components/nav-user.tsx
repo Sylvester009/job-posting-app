@@ -1,10 +1,10 @@
 'use client';
 
 import {
-  IconCreditCard,
+  IconHelp,
   IconDotsVertical,
   IconLogout,
-  IconNotification,
+  IconSettings,
   IconUserCircle,
 } from '@tabler/icons-react';
 
@@ -90,17 +90,20 @@ export function NavUser({
                 Account
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <IconCreditCard />
-                Billing
+                <IconSettings />
+                Settings
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <IconNotification />
-                Notifications
+                <IconHelp />
+                Get Help
               </DropdownMenuItem>
             </DropdownMenuGroup>
             <DropdownMenuSeparator />
             <DropdownMenuItem>
-              <Link href="/" className='flex items-center justify-start gap-2 w-full'>
+              <Link
+                href="/"
+                className="flex items-center justify-start gap-2 w-full"
+              >
                 {' '}
                 <IconLogout />
                 Log out

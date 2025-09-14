@@ -1,28 +1,26 @@
-"use client"
+'use client';
 
-import * as React from "react"
+import * as React from 'react';
 import {
-  IconCamera,
   IconChartBar,
   IconDashboard,
-  IconDatabase,
-  IconFileAi,
-  IconFileDescription,
-  IconFileWord,
-  IconFolder,
   IconHelp,
   IconInnerShadowTop,
   IconListDetails,
-  IconReport,
   IconSearch,
   IconSettings,
   IconUsers,
-} from "@tabler/icons-react"
+  IconBriefcase,
+  IconBookmark,
+  IconMessage,
+  IconUserPlus,
+  IconFileText,
+  IconBell,
+} from '@tabler/icons-react';
 
-import { NavDocuments } from "@/styles/components/nav-documents"
-import { NavMain } from "@/styles/components/nav-main"
-import { NavSecondary } from "@/styles/components/nav-secondary"
-import { NavUser } from "@/styles/components/nav-user"
+import {NavMain} from '@/styles/components/nav-main';
+import {NavSecondary} from '@/styles/components/nav-secondary';
+import {NavUser} from '@/styles/components/nav-user';
 import {
   Sidebar,
   SidebarContent,
@@ -31,126 +29,121 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-} from "@/styles/components/ui/sidebar"
+} from '@/styles/components/ui/sidebar';
+import {usePathname} from 'next/navigation';
 
 const data = {
   user: {
-    name: "shadcn",
-    email: "m@example.com",
-    avatar: "/avatars/shadcn.jpg",
+    name: 'shadcn',
+    email: 'm@example.com',
+    avatar: '/avatars/shadcn.jpg',
   },
-  navMain: [
-    {
-      title: "Dashboard",
-      url: "#",
-      icon: IconDashboard,
-    },
-    {
-      title: "Lifecycle",
-      url: "#",
-      icon: IconListDetails,
-    },
-    {
-      title: "Analytics",
-      url: "#",
-      icon: IconChartBar,
-    },
-    {
-      title: "Projects",
-      url: "#",
-      icon: IconFolder,
-    },
-    {
-      title: "Team",
-      url: "#",
-      icon: IconUsers,
-    },
-  ],
-  navClouds: [
-    {
-      title: "Capture",
-      icon: IconCamera,
-      isActive: true,
-      url: "#",
-      items: [
-        {
-          title: "Active Proposals",
-          url: "#",
-        },
-        {
-          title: "Archived",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Proposal",
-      icon: IconFileDescription,
-      url: "#",
-      items: [
-        {
-          title: "Active Proposals",
-          url: "#",
-        },
-        {
-          title: "Archived",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Prompts",
-      icon: IconFileAi,
-      url: "#",
-      items: [
-        {
-          title: "Active Proposals",
-          url: "#",
-        },
-        {
-          title: "Archived",
-          url: "#",
-        },
-      ],
-    },
-  ],
-  navSecondary: [
-    {
-      title: "Settings",
-      url: "#",
-      icon: IconSettings,
-    },
-    {
-      title: "Get Help",
-      url: "#",
-      icon: IconHelp,
-    },
-    {
-      title: "Search",
-      url: "#",
-      icon: IconSearch,
-    },
-  ],
-  documents: [
-    {
-      name: "Data Library",
-      url: "#",
-      icon: IconDatabase,
-    },
-    {
-      name: "Reports",
-      url: "#",
-      icon: IconReport,
-    },
-    {
-      name: "Word Assistant",
-      url: "#",
-      icon: IconFileWord,
-    },
-  ],
-}
+  navMain: {
+    seeker: [
+      {
+        title: 'Dashboard',
+        url: '/dashboard',
+        icon: IconDashboard,
+      },
+      {
+        title: 'Job Search',
+        url: '/jobs',
+        icon: IconSearch,
+      },
+      {
+        title: 'Applications',
+        url: '/applications',
+        icon: IconBriefcase,
+      },
+      {
+        title: 'Saved Jobs',
+        url: '/saved',
+        icon: IconBookmark,
+      },
+      {
+        title: 'Messages',
+        url: '/messages',
+        icon: IconMessage,
+      },
+      {
+        title: 'Profile',
+        url: '/profile',
+        icon: IconFileText,
+      },
+    ],
 
-export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
+    recruiter: [
+      {
+        title: 'Dashboard',
+        url: '/recruiter/dashboard',
+        icon: IconDashboard,
+      },
+      {
+        title: 'Job Postings',
+        url: '/recruiter/jobs',
+        icon: IconListDetails,
+      },
+      {
+        title: 'Applications',
+        url: '/recruiter/applications',
+        icon: IconBriefcase,
+      },
+      {
+        title: 'Candidates',
+        url: '/recruiter/candidates',
+        icon: IconUsers,
+      },
+
+      {
+        title: 'Team',
+        url: '/recruiter/team',
+        icon: IconUserPlus,
+      },
+      {
+        title: 'Analytics',
+        url: '/recruiter/analytics',
+        icon: IconChartBar,
+      },
+    ],
+  },
+  navSecondary: {
+    seeker: [
+      {
+        title: 'Notifications',
+        url: '/notifications',
+        icon: IconBell,
+      },
+      {
+        title: 'Search',
+        url: '#',
+        icon: IconSearch,
+      },
+    ],
+    recruiter: [
+      {
+        title: 'Messages',
+        url: '/recruiter/messages',
+        icon: IconMessage,
+      },
+      {
+        title: 'Search',
+        url: '#',
+        icon: IconSearch,
+      },
+    ],
+  },
+};
+
+export function AppSidebar({...props}: React.ComponentProps<typeof Sidebar>) {
+  const pathname = usePathname();
+
+  const userRole = pathname.includes('recruiter') ? 'recruiter' : '';
+
+  const navMains = userRole ? data?.navMain?.recruiter : data?.navMain?.seeker;
+  const navSecondaries = userRole
+    ? data?.navSecondary?.recruiter
+    : data?.navSecondary?.seeker;
+
   return (
     <Sidebar collapsible="offcanvas" {...props}>
       <SidebarHeader>
@@ -169,13 +162,12 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         </SidebarMenu>
       </SidebarHeader>
       <SidebarContent>
-        <NavMain items={data.navMain} />
-        <NavDocuments items={data.documents} />
-        <NavSecondary items={data.navSecondary} className="mt-auto" />
+        <NavMain items={navMains} />
+        <NavSecondary items={navSecondaries} className="mt-auto" />
       </SidebarContent>
       <SidebarFooter>
         <NavUser user={data.user} />
       </SidebarFooter>
     </Sidebar>
-  )
+  );
 }

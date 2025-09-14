@@ -1,7 +1,9 @@
 import {ThemeProvider} from '@/styles/components/theme-provider';
 import type {Metadata} from 'next';
 import {Geist, Geist_Mono} from 'next/font/google';
-import './globals.css';
+import {AppSidebar} from '@/styles/components/app-sidebar';
+import {SidebarProvider} from '@/styles/components/ui/sidebar';
+import '../globals.css';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -18,7 +20,7 @@ export const metadata: Metadata = {
   description: 'Created By NineStarx',
 };
 
-export default function RootLayout({
+export default function MainLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -34,9 +36,17 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          
+          <SidebarProvider
+            style={
+              {
+                '--sidebar-width': 'calc(var(--spacing) * 72)',
+                '--header-height': 'calc(var(--spacing) * 12)',
+              } as React.CSSProperties
+            }
+          >
+            <AppSidebar variant="inset" />
             {children}
-          
+          </SidebarProvider>
         </ThemeProvider>
       </body>
     </html>
