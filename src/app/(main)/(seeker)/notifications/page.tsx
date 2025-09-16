@@ -1,10 +1,7 @@
 import {ChartAreaInteractive} from '@/styles/components/chart-area-interactive';
-import {DataTable} from '@/styles/components/data-table';
 import {SectionCards} from '@/styles/components/section-cards';
 
-import data from './data.json';
-
-export default function RecruiterDashboardPage() {
+export default function NotificationsPage() {
   return (
     <div className="flex flex-1 flex-col">
       <div className="@container/main flex flex-1 flex-col gap-2">
@@ -13,7 +10,7 @@ export default function RecruiterDashboardPage() {
           <div className="px-4 lg:px-6">
             <ChartAreaInteractive />
           </div>
-          <DataTable data={data} />
+          <p>Notifications</p>
         </div>
       </div>
     </div>

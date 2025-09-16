@@ -4,11 +4,9 @@ import * as React from 'react';
 import {
   IconChartBar,
   IconDashboard,
-  IconHelp,
   IconInnerShadowTop,
   IconListDetails,
   IconSearch,
-  IconSettings,
   IconUsers,
   IconBriefcase,
   IconBookmark,
@@ -57,7 +55,7 @@ const data = {
       },
       {
         title: 'Saved Jobs',
-        url: '/saved',
+        url: '/saved-jobs',
         icon: IconBookmark,
       },
       {
@@ -80,7 +78,7 @@ const data = {
       },
       {
         title: 'Job Postings',
-        url: '/recruiter/jobs',
+        url: '/recruiter/job-postings',
         icon: IconListDetails,
       },
       {
