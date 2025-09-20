@@ -46,10 +46,10 @@ Both seekers and recruiters get a personalized dashboard:
 
 ## 🛠️ Tech Stack
 - **Frontend:** React / Next.js, Tailwind CSS, Shadcn UI  
-- **Backend:** Node.js, Express.js (or Nest.js)  
-- **Database:** PostgreSQL / MongoDB  
+- **Backend:** Flask (RESTFUL Api) 
+- **Database:** PostgreSQL  
 - **Authentication:** JWT / OAuth  
-- **Hosting:** Vercel, AWS, or Netlify  
+- **Hosting:** Vercel 
 
 ---
 
