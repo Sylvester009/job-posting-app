@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏢 Worknest
 
-## Getting Started
+Worknest is a modern job platform that bridges the gap between **job seekers** and **recruiters**.  
+Unlike traditional job boards, Worknest ensures **quality over quantity** by prioritizing **matching accuracy, accountability, and credibility** on both sides.  
 
-First, run the development server:
+---
+
+## ❓ Why Worknest?
+
+Most job platforms are overwhelming:
+- Job seekers waste time applying for irrelevant jobs.  
+- Recruiters are flooded with unqualified applicants.  
+- Neither side has a reliable way to measure **credibility**.  
+
+**Worknest solves this with smart matching, accountability, and transparency.**
+
+---
+
+## ✨ Features
+
+### 👩‍💼 Job Seeker Features
+- **Profiles** → Create multiple tailored profiles (in resume format) for different career paths.  
+- **Jobs** → Optimized job list based on profile match.  
+  - Apply only to jobs with **≥70% match rate**, ensuring relevance.  
+- **Messages** → Send structured, email-style messages to recruiters **after applying**.  
+- **Applications** → Track applied jobs with **detailed company insights**.  
+- **Account** → Manage personal details and build a **credibility score** (increases or decreases based on recruiter ratings).  
+
+---
+
+### 🧑‍💼 Recruiter Features
+- **Job Applications** → View all applicants **ranked by best match**.  
+- **Job Posting** → Post and manage job openings.  
+- **Messages** → Interview or message applicants directly.  
+  - Ignoring applications lowers recruiter **credibility score**.  
+  - Low-credibility recruiters have their jobs **hidden from seekers**, even with high matches.  
+
+---
+
+### 📊 Shared Feature: Dashboards
+Both seekers and recruiters get a personalized dashboard:
+- **Seekers** → Profiles, matches, applications, credibility score.  
+- **Recruiters** → Job postings, candidate lists, credibility rating.  
+
+---
+
+## 🛠️ Tech Stack
+- **Frontend:** React / Next.js, Tailwind CSS, Shadcn UI  
+- **Backend:** Node.js, Express.js (or Nest.js)  
+- **Database:** PostgreSQL / MongoDB  
+- **Authentication:** JWT / OAuth  
+- **Hosting:** Vercel, AWS, or Netlify  
+
+---
+
+## ⚙️ Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/your-username/worknest.git
+
+# Navigate into the project directory
+cd worknest
+
+# Install dependencies
+npm install
+
+# Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
