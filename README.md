@@ -57,10 +57,10 @@ Both seekers and recruiters get a personalized dashboard:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/job-posting-app.git
+git clone https://github.com/Sylvester009/job-posting-app.git
 
 # Navigate into the project directory
-cd worknest
+cd job-posting-app
 
 # Install dependencies
 npm install
