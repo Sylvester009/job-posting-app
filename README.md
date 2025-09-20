@@ -57,7 +57,7 @@ Both seekers and recruiters get a personalized dashboard:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/worknest.git
+git clone https://github.com/your-username/job-posting-app.git
 
 # Navigate into the project directory
 cd worknest
