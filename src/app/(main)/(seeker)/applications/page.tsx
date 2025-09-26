@@ -51,7 +51,9 @@ interface Application {
 }
 
 export default function ApplicationsPage() {
-  const [applications] = useState<Application[]>(applicationsData.applications);
+  const [applications] = useState<Application[]>(
+    applicationsData.applications as Application[]
+  );;
   const [searchTerm, setSearchTerm] = useState('');
   const [statusFilter, setStatusFilter] = useState<ApplicationStatus | 'all'>('all');
 
