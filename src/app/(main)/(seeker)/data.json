@@ -1,0 +1,472 @@
+{
+  "applications": [
+    {
+      "id": "1",
+      "jobTitle": "Senior Frontend Developer",
+      "company": "TechCorp Inc.",
+      "companyLogo": "/company-logos/techcorp.svg",
+      "status": "interview",
+      "appliedDate": "2024-01-15",
+      "lastUpdate": "2024-01-20",
+      "location": "San Francisco, CA",
+      "salary": "$120,000 - $140,000",
+      "type": "Full-time",
+      "companyInfo": {
+        "rating": 4.5,
+        "reviews": 234,
+        "employees": "500-1000",
+        "industry": "Software Development",
+        "founded": 2015,
+        "website": "https://techcorp.com"
+      },
+      "applicationStats": {
+        "viewed": true,
+        "savedBy": 12,
+        "applicants": 89
+      }
+    },
+    {
+      "id": "2",
+      "jobTitle": "Product Designer",
+      "company": "DesignStudio",
+      "companyLogo": "/company-logos/designstudio.svg",
+      "status": "applied",
+      "appliedDate": "2024-01-18",
+      "lastUpdate": "2024-01-18",
+      "location": "Remote",
+      "salary": "$90,000 - $110,000",
+      "type": "Full-time",
+      "companyInfo": {
+        "rating": 4.2,
+        "reviews": 156,
+        "employees": "50-200",
+        "industry": "Design Services",
+        "founded": 2018,
+        "website": "https://designstudio.com"
+      },
+      "applicationStats": {
+        "viewed": false,
+        "savedBy": 8,
+        "applicants": 45
+      }
+    }
+  ],
+  "jobSeekerProfile": {
+    "skills": ["React", "TypeScript", "Next.js", "Node.js", "Tailwind CSS", "Python"],
+    "experience": "3-5 years",
+    "preferredLocation": ["Remote", "San Francisco", "New York"],
+    "desiredSalary": "$100,000 - $130,000",
+    "preferredJobTypes": ["Full-time", "Contract"],
+    "industries": ["Software Development", "SaaS", "FinTech"]
+  },
+  "recommendedJobs": [
+    {
+      "id": "101",
+      "title": "Senior Frontend Engineer - React/TypeScript",
+      "company": "TechInnovate",
+      "logo": "/company-logos/techinnovate.svg",
+      "location": "Remote",
+      "salary": "$115,000 - $135,000",
+      "type": "Full-time",
+      "postedDate": "2024-01-20",
+      "matchRate": 92,
+      "skillsRequired": ["React", "TypeScript", "Next.js", "Tailwind CSS"],
+      "experienceRequired": "3+ years",
+      "description": "We're looking for a senior frontend engineer to join our growing team...",
+      "companyInfo": {
+        "rating": 4.7,
+        "size": "201-500",
+        "industry": "SaaS"
+      },
+      "urgency": "high" 
+    },
+    {
+      "id": "102",
+      "title": "Full Stack Developer",
+      "company": "StartUpGrid",
+      "logo": "/company-logos/startupgrid.svg",
+      "location": "San Francisco, CA",
+      "salary": "$105,000 - $125,000",
+      "type": "Full-time",
+      "postedDate": "2024-01-19",
+      "matchRate": 85,
+      "skillsRequired": ["React", "Node.js", "TypeScript", "Python"],
+      "experienceRequired": "2+ years",
+      "description": "Join our dynamic team as a full stack developer...",
+      "companyInfo": {
+        "rating": 4.3,
+        "size": "51-200",
+        "industry": "Software Development"
+      },
+      "urgency": "medium"
+    },
+    {
+      "id": "103",
+      "title": "Frontend Developer",
+      "company": "FinanceTech Solutions",
+      "logo": "/company-logos/financetech.svg",
+      "location": "New York, NY",
+      "salary": "$95,000 - $115,000",
+      "type": "Full-time",
+      "postedDate": "2024-01-18",
+      "matchRate": 78,
+      "skillsRequired": ["React", "JavaScript", "CSS"],
+      "experienceRequired": "2+ years",
+      "description": "Looking for a talented frontend developer for our financial platform...",
+      "companyInfo": {
+        "rating": 4.5,
+        "size": "500-1000",
+        "industry": "FinTech"
+      },
+      "urgency": "high"
+    },
+    {
+      "id": "104",
+      "title": "React Native Developer",
+      "company": "MobileFirst Inc.",
+      "logo": "/company-logos/mobilefirst.svg",
+      "location": "Remote",
+      "salary": "$90,000 - $110,000",
+      "type": "Contract",
+      "postedDate": "2024-01-22",
+      "matchRate": 65,
+      "skillsRequired": ["React Native", "JavaScript", "Mobile Development"],
+      "experienceRequired": "3+ years",
+      "description": "Mobile app development using React Native...",
+      "companyInfo": {
+        "rating": 4.2,
+        "size": "11-50",
+        "industry": "Mobile Development"
+      },
+      "urgency": "low"
+    }
+  ],
+  "resumeProfiles": [
+    {
+      "id": "1",
+      "name": "Frontend Developer Profile",
+      "isPrimary": true,
+      "lastUpdated": "2024-01-20",
+      "careerPath": "Frontend Development",
+      "summary": "Experienced Frontend Developer specializing in React, TypeScript, and modern web technologies. Passionate about creating responsive, user-friendly applications.",
+      "targetRoles": ["Senior Frontend Developer", "React Developer", "UI Engineer"],
+      "targetSalary": "$110,000 - $130,000",
+      "visibility": "public",
+      "stats": {
+        "views": 24,
+        "downloads": 8,
+        "applications": 12
+      },
+      "content": {
+        "experience": [
+          {
+            "id": "exp1",
+            "title": "Senior Frontend Developer",
+            "company": "TechCorp Inc.",
+            "period": "2022 - Present",
+            "description": "Lead frontend development for SaaS platform using React and TypeScript",
+            "skills": ["React", "TypeScript", "Next.js", "Tailwind CSS"]
+          }
+        ],
+        "skills": {
+          "technical": ["React", "TypeScript", "JavaScript", "HTML5", "CSS3", "Next.js", "Tailwind CSS"],
+          "soft": ["Team Leadership", "Agile Methodology", "Problem Solving"]
+        },
+        "education": [
+          {
+            "degree": "BSc Computer Science",
+            "institution": "University of Technology",
+            "year": "2018-2022"
+          }
+        ]
+      }
+    },
+    {
+      "id": "2",
+      "name": "Full Stack Developer Profile",
+      "isPrimary": false,
+      "lastUpdated": "2024-01-18",
+      "careerPath": "Full Stack Development",
+      "summary": "Versatile Full Stack Developer with expertise in both frontend and backend technologies. Experienced in building end-to-end web applications.",
+      "targetRoles": ["Full Stack Developer", "Software Engineer", "Full Stack Engineer"],
+      "targetSalary": "$120,000 - $140,000",
+      "visibility": "public",
+      "stats": {
+        "views": 15,
+        "downloads": 5,
+        "applications": 8
+      },
+      "content": {
+        "experience": [
+          {
+            "id": "exp1",
+            "title": "Full Stack Developer",
+            "company": "StartUpGrid",
+            "period": "2021 - 2022",
+            "description": "Developed full-stack applications using MERN stack",
+            "skills": ["React", "Node.js", "MongoDB", "Express", "Python"]
+          }
+        ],
+        "skills": {
+          "technical": ["React", "Node.js", "Python", "MongoDB", "PostgreSQL", "AWS", "Docker"],
+          "soft": ["Project Management", "Client Communication", "System Architecture"]
+        },
+        "education": [
+          {
+            "degree": "BSc Computer Science",
+            "institution": "University of Technology",
+            "year": "2018-2022"
+          }
+        ]
+      }
+    },
+    {
+      "id": "3",
+      "name": "UI/UX Developer Profile",
+      "isPrimary": false,
+      "lastUpdated": "2024-01-15",
+      "careerPath": "UI/UX Development",
+      "summary": "Creative developer focused on creating beautiful, accessible user interfaces with strong UX principles.",
+      "targetRoles": ["UI Developer", "UX Engineer", "Frontend Developer"],
+      "targetSalary": "$100,000 - $120,000",
+      "visibility": "private",
+      "stats": {
+        "views": 8,
+        "downloads": 3,
+        "applications": 4
+      },
+      "content": {
+        "experience": [
+          {
+            "id": "exp1",
+            "title": "UI Developer",
+            "company": "DesignStudio",
+            "period": "2020 - 2021",
+            "description": "Created responsive web interfaces and design systems",
+            "skills": ["Figma", "React", "CSS3", "Accessibility", "Design Systems"]
+          }
+        ],
+        "skills": {
+          "technical": ["Figma", "Adobe XD", "React", "CSS3", "SASS", "Web Accessibility"],
+          "soft": ["Design Thinking", "User Research", "Prototyping", "Visual Design"]
+        },
+        "education": [
+          {
+            "degree": "BSc Computer Science",
+            "institution": "University of Technology",
+            "year": "2018-2022"
+          }
+        ]
+      }
+    }
+  ],
+  "careerPaths": [
+    "Frontend Development",
+    "Backend Development",
+    "Full Stack Development",
+    "UI/UX Development",
+    "DevOps Engineering",
+    "Mobile Development",
+    "Data Science",
+    "Product Management"
+  ],
+  "messages": {
+    "drafts": [
+      {
+        "id": "draft1",
+        "subject": "Follow-up on Frontend Developer Application",
+        "preview": "Thank you for considering my application for the Frontend Developer position...",
+        "lastSaved": "2024-01-20T14:30:00Z",
+        "applicationId": "1"
+      }
+    ],
+    "sent": [
+      {
+        "id": "sent1",
+        "subject": "Thank you for the interview opportunity",
+        "preview": "I wanted to express my gratitude for the interview yesterday...",
+        "sentDate": "2024-01-18T10:15:00Z",
+        "applicationId": "1",
+        "recipient": "Sarah Johnson - TechCorp HR",
+        "status": "read",
+        "jobTitle": "Senior Frontend Developer"
+      }
+    ],
+    "templates": [
+      {
+        "id": "template1",
+        "name": "Application Follow-up",
+        "subject": "Follow-up on {Job Title} Application",
+        "body": "Dear {Recruiter Name},\n\nI hope this message finds you well. I wanted to follow up on my application for the {Job Title} position at {Company Name}...",
+        "category": "follow-up",
+        "usedCount": 12
+      },
+      {
+        "id": "template2",
+        "name": "Post-Interview Thank You",
+        "subject": "Thank you for the interview opportunity",
+        "body": "Dear {Recruiter Name},\n\nThank you for taking the time to interview me for the {Job Title} position at {Company Name}...",
+        "category": "thank-you",
+        "usedCount": 8
+      },
+      {
+        "id": "template3",
+        "name": "Status Inquiry",
+        "subject": "Inquiry regarding {Job Title} application",
+        "body": "Dear {Recruiter Name},\n\nI hope you're having a productive week. I'm writing to inquire about the status of my application for the {Job Title} position...",
+        "category": "inquiry",
+        "usedCount": 5
+      }
+    ]
+  },
+  "applicationsWithRecruiters": [
+    {
+      "id": "1",
+      "jobTitle": "Senior Frontend Developer",
+      "company": "TechCorp Inc.",
+      "recruiter": {
+        "name": "Sarah Johnson",
+        "title": "Senior HR Manager",
+        "email": "s.johnson@techcorp.com",
+        "lastContact": "2024-01-15"
+      },
+      "applicationDate": "2024-01-15",
+      "lastStatus": "interview"
+    },
+    {
+      "id": "2",
+      "jobTitle": "Product Designer",
+      "company": "DesignStudio",
+      "recruiter": {
+        "name": "Mike Chen",
+        "title": "Talent Acquisition",
+        "email": "mike.chen@designstudio.com",
+        "lastContact": "2024-01-18"
+      },
+      "applicationDate": "2024-01-18",
+      "lastStatus": "applied"
+    }
+  ],
+  "savedJobs": [
+    {
+      "id": "saved1",
+      "jobId": "101",
+      "savedDate": "2024-01-20T10:30:00Z",
+      "lastViewed": "2024-01-22T14:20:00Z",
+      "notes": "Great company culture and benefits. Strong alignment with my frontend skills.",
+      "priority": "high",
+      "plannedApplyDate": "2024-01-25",
+      "customTags": ["remote-first", "good-benefits", "tech-stack-match"],
+      "status": "researching",
+      "jobData": {
+        "id": "101",
+        "title": "Senior Frontend Engineer - React/TypeScript",
+        "company": "TechInnovate",
+        "logo": "/company-logos/techinnovate.svg",
+        "location": "Remote",
+        "salary": "$115,000 - $135,000",
+        "type": "Full-time",
+        "postedDate": "2024-01-20",
+        "applicationDeadline": "2024-02-15",
+        "matchRate": 92,
+        "skillsRequired": ["React", "TypeScript", "Next.js", "Tailwind CSS"],
+        "experienceRequired": "3+ years",
+        "description": "We're looking for a senior frontend engineer to join our growing team...",
+        "companyInfo": {
+          "rating": 4.7,
+          "size": "201-500",
+          "industry": "SaaS",
+          "culture": ["Remote-first", "Flexible hours", "Learning budget"]
+        },
+        "urgency": "high"
+      }
+    },
+    {
+      "id": "saved2",
+      "jobId": "102",
+      "savedDate": "2024-01-19T16:45:00Z",
+      "lastViewed": "2024-01-21T09:15:00Z",
+      "notes": "Good growth opportunity but lower salary range. Need to research company stability.",
+      "priority": "medium",
+      "plannedApplyDate": "2024-01-28",
+      "customTags": ["growth-opportunity", "startup", "backend-interest"],
+      "status": "researching",
+      "jobData": {
+        "id": "102",
+        "title": "Full Stack Developer",
+        "company": "StartUpGrid",
+        "logo": "/company-logos/startupgrid.svg",
+        "location": "San Francisco, CA",
+        "salary": "$105,000 - $125,000",
+        "type": "Full-time",
+        "postedDate": "2024-01-19",
+        "applicationDeadline": "2024-02-10",
+        "matchRate": 85,
+        "skillsRequired": ["React", "Node.js", "TypeScript", "Python"],
+        "experienceRequired": "2+ years",
+        "description": "Join our dynamic team as a full stack developer...",
+        "companyInfo": {
+          "rating": 4.3,
+          "size": "51-200",
+          "industry": "Software Development"
+        },
+        "urgency": "medium"
+      }
+    },
+    {
+      "id": "saved3",
+      "jobId": "103",
+      "savedDate": "2024-01-18T11:20:00Z",
+      "lastViewed": "2024-01-18T11:20:00Z",
+      "notes": "Applied already, keeping for reference during interview process.",
+      "priority": "low",
+      "plannedApplyDate": "2024-01-18",
+      "customTags": ["applied", "interview-prep", "financial-sector"],
+      "status": "applied",
+      "jobData": {
+        "id": "103",
+        "title": "Frontend Developer",
+        "company": "FinanceTech Solutions",
+        "logo": "/company-logos/financetech.svg",
+        "location": "New York, NY",
+        "salary": "$95,000 - $115,000",
+        "type": "Full-time",
+        "postedDate": "2024-01-18",
+        "applicationDeadline": "2024-02-05",
+        "matchRate": 78,
+        "skillsRequired": ["React", "JavaScript", "CSS"],
+        "experienceRequired": "2+ years",
+        "description": "Looking for a talented frontend developer for our financial platform...",
+        "companyInfo": {
+          "rating": 4.5,
+          "size": "500-1000",
+          "industry": "FinTech"
+        },
+        "urgency": "high"
+      }
+    }
+  ],
+  "savedJobFolders": [
+    {
+      "id": "folder1",
+      "name": "High Priority",
+      "color": "red",
+      "jobCount": 3,
+      "description": "Top companies to target"
+    },
+    {
+      "id": "folder2",
+      "name": "Research Needed",
+      "color": "yellow",
+      "jobCount": 5,
+      "description": "Need more company research"
+    },
+    {
+      "id": "folder3",
+      "name": "Backup Options",
+      "color": "blue",
+      "jobCount": 2,
+      "description": "Good fallback positions"
+    }
+  ]
+}
