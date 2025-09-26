@@ -212,7 +212,7 @@ function ApplicationCard({ application }: { application: Application }) {
     };
     
     const config = statusConfig[status];
-    return <Badge variant={config.variant}>{config.label}</Badge>;
+    return <Badge variant="default">{config.label}</Badge>;
   };
 
   return (
