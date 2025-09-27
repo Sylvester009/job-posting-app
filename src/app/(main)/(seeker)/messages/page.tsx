@@ -11,20 +11,14 @@ import { Label } from '@/styles/components/ui/label';
 import { 
   Send, 
   Mail, 
-  Archive, 
   Trash2, 
   Edit, 
   Copy, 
-  Plus, 
   Search,
-  Clock,
-  Eye,
-  EyeOff,
   FileText,
   Building,
   User,
   Calendar,
-  Star,
   Save
 } from 'lucide-react';
 
@@ -70,7 +64,7 @@ export default function MessagesPage() {
   const [selectedApplication, setSelectedApplication] = useState<ApplicationWithRecruiter | null>(null);
   const [messageTemplates, setMessageTemplates] = useState<MessageTemplate[]>(messagesData.messages.templates);
   const [drafts, setDrafts] = useState<Message[]>(messagesData.messages.drafts);
-  const [sentMessages, setSentMessages] = useState<Message[]>(messagesData.messages.sent);
+  const [sentMessages, setSentMessages] = useState<Message[]>(messagesData.messages.sent as Message[]);
   const [searchTerm, setSearchTerm] = useState('');
 
   const applications: ApplicationWithRecruiter[] = messagesData.applicationsWithRecruiters;
@@ -239,7 +233,7 @@ function ApplicationCard({
     const statusConfig = {
       applied: { label: 'Applied', variant: 'secondary' as const },
       interview: { label: 'Interview', variant: 'default' as const },
-      offer: { label: 'Offer', variant: 'success' as const },
+      offer: { label: 'Offer', variant: 'default' as const },
       rejected: { label: 'Rejected', variant: 'destructive' as const },
     };
     

@@ -207,12 +207,12 @@ function ApplicationCard({ application }: { application: Application }) {
     const statusConfig = {
       applied: { label: 'Applied', variant: 'secondary' as const },
       interview: { label: 'Interview', variant: 'default' as const },
-      offer: { label: 'Offer', variant: 'success' as const },
+      offer: { label: 'Offer', variant: 'default' as const },
       rejected: { label: 'Rejected', variant: 'destructive' as const },
     };
     
     const config = statusConfig[status];
-    return <Badge variant="default">{config.label}</Badge>;
+    return <Badge variant={config.variant}>{config.label}</Badge>;
   };
 
   return (

@@ -110,27 +110,27 @@ export default function JobsPage() {
     }));
   };
 
-  const getMatchColor = (rate: number) => {
-    if (rate >= 85) return 'text-green-600 bg-green-50 border-green-200';
-    if (rate >= 70) return 'text-blue-600 bg-blue-50 border-blue-200';
-    return 'text-yellow-600 bg-yellow-50 border-yellow-200';
-  };
+  // const getMatchColor = (rate: number) => {
+  //   if (rate >= 85) return 'text-green-600 bg-green-50 border-green-200';
+  //   if (rate >= 70) return 'text-blue-600 bg-blue-50 border-blue-200';
+  //   return 'text-yellow-600 bg-yellow-50 border-yellow-200';
+  // };
 
-  const getUrgencyBadge = (urgency: string) => {
-    const config = {
-      high: { label: 'High Urgency', variant: 'destructive' as const, icon: Zap },
-      medium: { label: 'Medium Urgency', variant: 'default' as const, icon: Clock },
-      low: { label: 'Low Urgency', variant: 'secondary' as const, icon: Clock },
-    };
+  // const getUrgencyBadge = (urgency: string) => {
+  //   const config = {
+  //     high: { label: 'High Urgency', variant: 'destructive' as const, icon: Zap },
+  //     medium: { label: 'Medium Urgency', variant: 'default' as const, icon: Clock },
+  //     low: { label: 'Low Urgency', variant: 'secondary' as const, icon: Clock },
+  //   };
     
-    const { label, variant, icon: Icon } = config[urgency as keyof typeof config];
-    return (
-      <Badge variant={variant} className="flex items-center gap-1">
-        <Icon className="h-3 w-3" />
-        {label}
-      </Badge>
-    );
-  };
+  //   const { label, variant, icon: Icon } = config[urgency as keyof typeof config];
+  //   return (
+  //     <Badge variant={variant} className="flex items-center gap-1">
+  //       <Icon className="h-3 w-3" />
+  //       {label}
+  //     </Badge>
+  //   );
+  // };
 
   return (
     <div className="flex flex-1 flex-col">

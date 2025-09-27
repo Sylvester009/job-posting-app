@@ -1,34 +1,31 @@
 'use client';
 
-import { useState, useMemo } from 'react';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/styles/components/ui/card';
-import { Button } from '@/styles/components/ui/button';
-import { Badge } from '@/styles/components/ui/badge';
-import { Input } from '@/styles/components/ui/input';
+import {useState, useMemo} from 'react';
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from '@/styles/components/ui/card';
+import {Button} from '@/styles/components/ui/button';
+import {Badge} from '@/styles/components/ui/badge';
+import {Input} from '@/styles/components/ui/input';
 // import { Textarea } from '@/styles/components/ui/textarea';
-import { Label } from '@/styles/components/ui/label';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/styles/components/ui/tabs';
-import { 
-  Search, 
-  Filter, 
-  Star, 
+import {Label} from '@/styles/components/ui/label';
+// import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/styles/components/ui/tabs';
+import {
+  Search,
+  Star,
   Bookmark,
-  Calendar,
   MapPin,
   DollarSign,
   Building,
-  Users,
-  Eye,
   Edit,
   Trash2,
-  Folder,
   FolderPlus,
-  Tags,
-  BarChart3,
-  Send,
   Clock,
   CheckCircle2,
-  MoreVertical
+  MoreVertical,
 } from 'lucide-react';
 
 import savedJobsData from '../data.json';
@@ -72,7 +69,9 @@ interface CompanyInfo {
 }
 
 export default function SavedJobsPage() {
-  const [savedJobs, setSavedJobs] = useState<SavedJob[]>(savedJobsData.savedJobs);
+  const [savedJobs, setSavedJobs] = useState<SavedJob[]>(
+    savedJobsData.savedJobs as SavedJob[],
+  );
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedPriority, setSelectedPriority] = useState<string>('all');
   const [selectedStatus, setSelectedStatus] = useState<string>('all');
@@ -82,42 +81,54 @@ export default function SavedJobsPage() {
 
   const filteredJobs = useMemo(() => {
     return savedJobs.filter(job => {
-      const matchesSearch = job.jobData.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                           job.jobData.company.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                           job.notes.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                           job.customTags.some(tag => tag.toLowerCase().includes(searchTerm.toLowerCase()));
-      
-      const matchesPriority = selectedPriority === 'all' || job.priority === selectedPriority;
-      const matchesStatus = selectedStatus === 'all' || job.status === selectedStatus;
+      const matchesSearch =
+        job.jobData.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        job.jobData.company.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        job.notes.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        job.customTags.some(tag =>
+          tag.toLowerCase().includes(searchTerm.toLowerCase()),
+        );
+
+      const matchesPriority =
+        selectedPriority === 'all' || job.priority === selectedPriority;
+      const matchesStatus =
+        selectedStatus === 'all' || job.status === selectedStatus;
 
       return matchesSearch && matchesPriority && matchesStatus;
     });
   }, [savedJobs, searchTerm, selectedPriority, selectedStatus]);
 
   const priorities = {
-    high: { label: 'High Priority', color: 'text-red-600 bg-red-50 border-red-200' },
-    medium: { label: 'Medium Priority', color: 'text-yellow-600 bg-yellow-50 border-yellow-200' },
-    low: { label: 'Low Priority', color: 'text-blue-600 bg-blue-50 border-blue-200' }
+    high: {
+      label: 'High Priority',
+      color: 'text-red-600 bg-red-50 border-red-200',
+    },
+    medium: {
+      label: 'Medium Priority',
+      color: 'text-yellow-600 bg-yellow-50 border-yellow-200',
+    },
+    low: {
+      label: 'Low Priority',
+      color: 'text-blue-600 bg-blue-50 border-blue-200',
+    },
   };
 
   const statuses = {
-    researching: { label: 'Researching', variant: 'secondary' as const },
-    'ready-to-apply': { label: 'Ready to Apply', variant: 'default' as const },
-    applied: { label: 'Applied', variant: 'outline' as const }
+    researching: {label: 'Researching', variant: 'secondary' as const},
+    'ready-to-apply': {label: 'Ready to Apply', variant: 'default' as const},
+    applied: {label: 'Applied', variant: 'outline' as const},
   };
 
   const toggleCompare = (jobId: string) => {
-    setCompareMode(prev => 
-      prev.includes(jobId) 
-        ? prev.filter(id => id !== jobId)
-        : [...prev, jobId]
+    setCompareMode(prev =>
+      prev.includes(jobId) ? prev.filter(id => id !== jobId) : [...prev, jobId],
     );
   };
 
   const updateJobStatus = (jobId: string, newStatus: SavedJob['status']) => {
-    setSavedJobs(prev => prev.map(job => 
-      job.id === jobId ? { ...job, status: newStatus } : job
-    ));
+    setSavedJobs(prev =>
+      prev.map(job => (job.id === jobId ? {...job, status: newStatus} : job)),
+    );
   };
 
   const deleteSavedJob = (jobId: string) => {
@@ -128,14 +139,15 @@ export default function SavedJobsPage() {
   const stats = {
     total: savedJobs.length,
     highPriority: savedJobs.filter(job => job.priority === 'high').length,
-    readyToApply: savedJobs.filter(job => job.status === 'ready-to-apply').length,
+    readyToApply: savedJobs.filter(job => job.status === 'ready-to-apply')
+      .length,
     upcomingDeadlines: savedJobs.filter(job => {
       const deadline = new Date(job.jobData.applicationDeadline);
       const today = new Date();
       const diffTime = deadline.getTime() - today.getTime();
       const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
       return diffDays <= 7 && diffDays >= 0;
-    }).length
+    }).length,
   };
 
   return (
@@ -148,10 +160,13 @@ export default function SavedJobsPage() {
               <div className="flex flex-col gap-2">
                 <div className="flex items-center gap-2">
                   <Bookmark className="h-6 w-6 text-green-600" />
-                  <h1 className="text-2xl font-bold tracking-tight">Saved Jobs</h1>
+                  <h1 className="text-2xl font-bold tracking-tight">
+                    Saved Jobs
+                  </h1>
                 </div>
                 <p className="text-muted-foreground">
-                  Research, organize, and compare job opportunities before applying
+                  Research, organize, and compare job opportunities before
+                  applying
                 </p>
               </div>
               <div className="flex items-center gap-2">
@@ -174,7 +189,9 @@ export default function SavedJobsPage() {
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
               <Card>
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                  <CardTitle className="text-sm font-medium">Total Saved</CardTitle>
+                  <CardTitle className="text-sm font-medium">
+                    Total Saved
+                  </CardTitle>
                   <Bookmark className="h-4 w-4 text-muted-foreground" />
                 </CardHeader>
                 <CardContent>
@@ -185,33 +202,45 @@ export default function SavedJobsPage() {
 
               <Card>
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                  <CardTitle className="text-sm font-medium">High Priority</CardTitle>
+                  <CardTitle className="text-sm font-medium">
+                    High Priority
+                  </CardTitle>
                   <Star className="h-4 w-4 text-muted-foreground" />
                 </CardHeader>
                 <CardContent>
                   <div className="text-2xl font-bold">{stats.highPriority}</div>
-                  <p className="text-xs text-muted-foreground">Top opportunities</p>
+                  <p className="text-xs text-muted-foreground">
+                    Top opportunities
+                  </p>
                 </CardContent>
               </Card>
 
               <Card>
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                  <CardTitle className="text-sm font-medium">Ready to Apply</CardTitle>
+                  <CardTitle className="text-sm font-medium">
+                    Ready to Apply
+                  </CardTitle>
                   <CheckCircle2 className="h-4 w-4 text-muted-foreground" />
                 </CardHeader>
                 <CardContent>
                   <div className="text-2xl font-bold">{stats.readyToApply}</div>
-                  <p className="text-xs text-muted-foreground">Prepared applications</p>
+                  <p className="text-xs text-muted-foreground">
+                    Prepared applications
+                  </p>
                 </CardContent>
               </Card>
 
               <Card>
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                  <CardTitle className="text-sm font-medium">Upcoming Deadlines</CardTitle>
+                  <CardTitle className="text-sm font-medium">
+                    Upcoming Deadlines
+                  </CardTitle>
                   <Clock className="h-4 w-4 text-muted-foreground" />
                 </CardHeader>
                 <CardContent>
-                  <div className="text-2xl font-bold">{stats.upcomingDeadlines}</div>
+                  <div className="text-2xl font-bold">
+                    {stats.upcomingDeadlines}
+                  </div>
                   <p className="text-xs text-muted-foreground">Within 7 days</p>
                 </CardContent>
               </Card>
@@ -231,19 +260,19 @@ export default function SavedJobsPage() {
                         placeholder="Search saved jobs, companies, or notes..."
                         className="pl-9"
                         value={searchTerm}
-                        onChange={(e) => setSearchTerm(e.target.value)}
+                        onChange={e => setSearchTerm(e.target.value)}
                       />
                     </div>
                     <div className="flex gap-2">
-                      <Button 
-                        variant={viewMode === 'grid' ? 'default' : 'outline'} 
+                      <Button
+                        variant={viewMode === 'grid' ? 'default' : 'outline'}
                         size="sm"
                         onClick={() => setViewMode('grid')}
                       >
                         Grid
                       </Button>
-                      <Button 
-                        variant={viewMode === 'list' ? 'default' : 'outline'} 
+                      <Button
+                        variant={viewMode === 'list' ? 'default' : 'outline'}
                         size="sm"
                         onClick={() => setViewMode('list')}
                       >
@@ -255,11 +284,14 @@ export default function SavedJobsPage() {
                   {/* Filters */}
                   <div className="flex flex-wrap gap-4">
                     <div>
-                      <Label htmlFor="priority-filter" className="text-sm">Priority</Label>
+                      <Label htmlFor="priority-filter" className="text-sm">
+                        Priority
+                      </Label>
                       <select
+                        title="priority"
                         id="priority-filter"
                         value={selectedPriority}
-                        onChange={(e) => setSelectedPriority(e.target.value)}
+                        onChange={e => setSelectedPriority(e.target.value)}
                         className="p-2 border rounded-md text-sm"
                       >
                         <option value="all">All Priorities</option>
@@ -270,11 +302,14 @@ export default function SavedJobsPage() {
                     </div>
 
                     <div>
-                      <Label htmlFor="status-filter" className="text-sm">Status</Label>
+                      <Label htmlFor="status-filter" className="text-sm">
+                        Status
+                      </Label>
                       <select
+                        title="status"
                         id="status-filter"
                         value={selectedStatus}
-                        onChange={(e) => setSelectedStatus(e.target.value)}
+                        onChange={e => setSelectedStatus(e.target.value)}
                         className="p-2 border rounded-md text-sm"
                       >
                         <option value="all">All Statuses</option>
@@ -297,11 +332,16 @@ export default function SavedJobsPage() {
                   {filteredJobs.length} Saved Jobs
                 </h3>
                 <p className="text-sm text-muted-foreground">
-                  {filteredJobs.filter(job => job.priority === 'high').length} high priority • 
-                  {' '}{filteredJobs.filter(job => job.status === 'ready-to-apply').length} ready to apply
+                  {filteredJobs.filter(job => job.priority === 'high').length}{' '}
+                  high priority •{' '}
+                  {
+                    filteredJobs.filter(job => job.status === 'ready-to-apply')
+                      .length
+                  }{' '}
+                  ready to apply
                 </p>
               </div>
-              
+
               {compareMode.length > 0 && (
                 <Badge variant="default" className="flex items-center gap-1">
                   {/* <Compare className="h-3 w-3" /> */}
@@ -313,7 +353,7 @@ export default function SavedJobsPage() {
             {/* Jobs Grid/List */}
             {viewMode === 'grid' ? (
               <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-                {filteredJobs.map((savedJob) => (
+                {filteredJobs.map(savedJob => (
                   <SavedJobCard
                     key={savedJob.id}
                     savedJob={savedJob}
@@ -326,7 +366,7 @@ export default function SavedJobsPage() {
               </div>
             ) : (
               <div className="space-y-4">
-                {filteredJobs.map((savedJob) => (
+                {filteredJobs.map(savedJob => (
                   <SavedJobListCard
                     key={savedJob.id}
                     savedJob={savedJob}
@@ -345,10 +385,11 @@ export default function SavedJobsPage() {
                   <Bookmark className="h-12 w-12 text-muted-foreground mb-4" />
                   <h3 className="text-lg font-semibold">No saved jobs found</h3>
                   <p className="text-muted-foreground text-center mt-2">
-                    {searchTerm || selectedPriority !== 'all' || selectedStatus !== 'all'
+                    {searchTerm ||
+                    selectedPriority !== 'all' ||
+                    selectedStatus !== 'all'
                       ? 'Try adjusting your search or filter criteria'
-                      : 'Start saving jobs from the recommendations page to research them here'
-                    }
+                      : 'Start saving jobs from the recommendations page to research them here'}
                   </p>
                 </CardContent>
               </Card>
@@ -371,13 +412,13 @@ export default function SavedJobsPage() {
   );
 }
 
-function SavedJobCard({ 
-  savedJob, 
-  onUpdateStatus, 
-  onDelete, 
-  isComparing, 
-  onToggleCompare 
-}: { 
+function SavedJobCard({
+  savedJob,
+  onUpdateStatus,
+  onDelete,
+  isComparing,
+  onToggleCompare,
+}: {
   savedJob: SavedJob;
   onUpdateStatus: (jobId: string, status: SavedJob['status']) => void;
   onDelete: (jobId: string) => void;
@@ -389,19 +430,30 @@ function SavedJobCard({
   const [notes, setNotes] = useState(savedJob.notes);
 
   const priorities = {
-    high: { label: 'High Priority', color: 'text-red-600 bg-red-50 border-red-200' },
-    medium: { label: 'Medium Priority', color: 'text-yellow-600 bg-yellow-50 border-yellow-200' },
-    low: { label: 'Low Priority', color: 'text-blue-600 bg-blue-50 border-blue-200' }
+    high: {
+      label: 'High Priority',
+      color: 'text-red-600 bg-red-50 border-red-200',
+    },
+    medium: {
+      label: 'Medium Priority',
+      color: 'text-yellow-600 bg-yellow-50 border-yellow-200',
+    },
+    low: {
+      label: 'Low Priority',
+      color: 'text-blue-600 bg-blue-50 border-blue-200',
+    },
   };
 
   const statuses = {
-    researching: { label: 'Researching', variant: 'secondary' as const },
-    'ready-to-apply': { label: 'Ready to Apply', variant: 'default' as const },
-    applied: { label: 'Applied', variant: 'outline' as const }
+    researching: {label: 'Researching', variant: 'secondary' as const},
+    'ready-to-apply': {label: 'Ready to Apply', variant: 'default' as const},
+    applied: {label: 'Applied', variant: 'outline' as const},
   };
 
   const daysUntilDeadline = Math.ceil(
-    (new Date(savedJob.jobData.applicationDeadline).getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24)
+    (new Date(savedJob.jobData.applicationDeadline).getTime() -
+      new Date().getTime()) /
+      (1000 * 60 * 60 * 24),
   );
 
   const saveNotes = () => {
@@ -410,7 +462,11 @@ function SavedJobCard({
   };
 
   return (
-    <Card className={`hover:shadow-md transition-all ${isComparing ? 'ring-2 ring-blue-500' : ''}`}>
+    <Card
+      className={`hover:shadow-md transition-all ${
+        isComparing ? 'ring-2 ring-blue-500' : ''
+      }`}
+    >
       <CardContent className="p-4">
         {/* Header */}
         <div className="flex items-start justify-between mb-3">
@@ -455,9 +511,9 @@ function SavedJobCard({
             <span className="font-semibold">{savedJob.jobData.matchRate}%</span>
           </div>
           <div className="w-full bg-muted rounded-full h-2">
-            <div 
+            <div
               className="bg-green-600 h-2 rounded-full"
-              style={{ width: `${savedJob.jobData.matchRate}%` }}
+              style={{width: `${savedJob.jobData.matchRate}%`}}
             ></div>
           </div>
         </div>
@@ -465,8 +521,14 @@ function SavedJobCard({
         {/* Deadline */}
         <div className="flex items-center justify-between text-sm mb-3">
           <span>Application Deadline:</span>
-          <span className={daysUntilDeadline <= 7 ? 'text-red-600 font-semibold' : ''}>
-            {new Date(savedJob.jobData.applicationDeadline).toLocaleDateString()}
+          <span
+            className={
+              daysUntilDeadline <= 7 ? 'text-red-600 font-semibold' : ''
+            }
+          >
+            {new Date(
+              savedJob.jobData.applicationDeadline,
+            ).toLocaleDateString()}
             {daysUntilDeadline <= 7 && ` (${daysUntilDeadline} days)`}
           </span>
         </div>
@@ -496,7 +558,7 @@ function SavedJobCard({
             <Edit className="h-3 w-3 mr-2" />
             {showNotes ? 'Hide Notes' : 'Show Notes'}
           </Button>
-          
+
           {showNotes && (
             <div className="space-y-2">
               {isEditing ? (
@@ -507,11 +569,17 @@ function SavedJobCard({
                     rows={3}
                   /> */}
                   <div className="flex gap-2">
-                    <Button size="sm" onClick={saveNotes}>Save</Button>
-                    <Button variant="outline" size="sm" onClick={() => {
-                      setNotes(savedJob.notes);
-                      setIsEditing(false);
-                    }}>
+                    <Button size="sm" onClick={saveNotes}>
+                      Save
+                    </Button>
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={() => {
+                        setNotes(savedJob.notes);
+                        setIsEditing(false);
+                      }}
+                    >
                       Cancel
                     </Button>
                   </div>
@@ -519,7 +587,11 @@ function SavedJobCard({
               ) : (
                 <div>
                   <p className="text-sm text-muted-foreground">{notes}</p>
-                  <Button variant="ghost" size="sm" onClick={() => setIsEditing(true)}>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    onClick={() => setIsEditing(true)}
+                  >
                     <Edit className="h-3 w-3 mr-1" />
                     Edit
                   </Button>
@@ -531,18 +603,31 @@ function SavedJobCard({
 
         {/* Actions */}
         <div className="flex gap-2 mt-3">
-          <Button 
-            size="sm" 
+          <Button
+            size="sm"
             className="flex-1"
-            onClick={() => onUpdateStatus(savedJob.id, 
-              savedJob.status === 'applied' ? 'researching' : 
-              savedJob.status === 'researching' ? 'ready-to-apply' : 'applied'
-            )}
+            onClick={() =>
+              onUpdateStatus(
+                savedJob.id,
+                savedJob.status === 'applied'
+                  ? 'researching'
+                  : savedJob.status === 'researching'
+                  ? 'ready-to-apply'
+                  : 'applied',
+              )
+            }
           >
-            {savedJob.status === 'researching' ? 'Mark Ready' : 
-             savedJob.status === 'ready-to-apply' ? 'Mark Applied' : 'View Application'}
+            {savedJob.status === 'researching'
+              ? 'Mark Ready'
+              : savedJob.status === 'ready-to-apply'
+              ? 'Mark Applied'
+              : 'View Application'}
           </Button>
-          <Button variant="outline" size="sm" onClick={() => onDelete(savedJob.id)}>
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={() => onDelete(savedJob.id)}
+          >
             <Trash2 className="h-4 w-4" />
           </Button>
         </div>
@@ -551,13 +636,13 @@ function SavedJobCard({
   );
 }
 
-function SavedJobListCard({ 
-  savedJob, 
-  onUpdateStatus, 
-  onDelete, 
-  isComparing, 
-  onToggleCompare 
-}: { 
+function SavedJobListCard({
+  savedJob,
+  onUpdateStatus,
+  onDelete,
+  isComparing,
+  onToggleCompare,
+}: {
   savedJob: SavedJob;
   onUpdateStatus: (jobId: string, status: SavedJob['status']) => void;
   onDelete: (jobId: string) => void;
@@ -565,11 +650,17 @@ function SavedJobListCard({
   onToggleCompare: (jobId: string) => void;
 }) {
   const daysUntilDeadline = Math.ceil(
-    (new Date(savedJob.jobData.applicationDeadline).getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24)
+    (new Date(savedJob.jobData.applicationDeadline).getTime() -
+      new Date().getTime()) /
+      (1000 * 60 * 60 * 24),
   );
 
   return (
-    <Card className={`hover:shadow-md transition-all ${isComparing ? 'ring-2 ring-blue-500' : ''}`}>
+    <Card
+      className={`hover:shadow-md transition-all ${
+        isComparing ? 'ring-2 ring-blue-500' : ''
+      }`}
+    >
       <CardContent className="p-4">
         <div className="flex items-center justify-between">
           <div className="flex items-start gap-4 flex-1">
@@ -579,7 +670,11 @@ function SavedJobListCard({
             <div className="flex-1">
               <div className="flex items-center gap-2 mb-1">
                 <h3 className="font-semibold">{savedJob.jobData.title}</h3>
-                <Badge variant={savedJob.priority === 'high' ? 'destructive' : 'secondary'}>
+                <Badge
+                  variant={
+                    savedJob.priority === 'high' ? 'destructive' : 'secondary'
+                  }
+                >
                   {savedJob.priority}
                 </Badge>
                 <Badge variant="outline">{savedJob.status}</Badge>
@@ -599,28 +694,46 @@ function SavedJobListCard({
               </div>
             </div>
           </div>
-          
+
           <div className="flex items-center gap-2">
             <div className="text-right">
               <div className="text-sm font-semibold">
-                Due: {new Date(savedJob.jobData.applicationDeadline).toLocaleDateString()}
+                Due:{' '}
+                {new Date(
+                  savedJob.jobData.applicationDeadline,
+                ).toLocaleDateString()}
               </div>
               {daysUntilDeadline <= 7 && (
-                <div className="text-xs text-red-600">{daysUntilDeadline} days left</div>
+                <div className="text-xs text-red-600">
+                  {daysUntilDeadline} days left
+                </div>
               )}
             </div>
-            <Button variant="ghost" size="sm" onClick={() => onToggleCompare(savedJob.id)}>
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => onToggleCompare(savedJob.id)}
+            >
               {/* <Compare className={`h-4 w-4 ${isComparing ? 'text-blue-600' : ''}`} /> */}
             </Button>
-            <Button 
+            <Button
               size="sm"
-              onClick={() => onUpdateStatus(savedJob.id, 
-                savedJob.status === 'applied' ? 'researching' : 
-                savedJob.status === 'researching' ? 'ready-to-apply' : 'applied'
-              )}
+              onClick={() =>
+                onUpdateStatus(
+                  savedJob.id,
+                  savedJob.status === 'applied'
+                    ? 'researching'
+                    : savedJob.status === 'researching'
+                    ? 'ready-to-apply'
+                    : 'applied',
+                )
+              }
             >
-              {savedJob.status === 'researching' ? 'Ready' : 
-               savedJob.status === 'ready-to-apply' ? 'Apply' : 'View'}
+              {savedJob.status === 'researching'
+                ? 'Ready'
+                : savedJob.status === 'ready-to-apply'
+                ? 'Apply'
+                : 'View'}
             </Button>
           </div>
         </div>
@@ -629,7 +742,13 @@ function SavedJobListCard({
   );
 }
 
-function ComparePanel({ savedJobs, onClose }: { savedJobs: SavedJob[]; onClose: () => void }) {
+function ComparePanel({
+  savedJobs,
+  onClose,
+}: {
+  savedJobs: SavedJob[];
+  onClose: () => void;
+}) {
   return (
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
       <Card className="w-full max-w-6xl max-h-[90vh] overflow-hidden">
@@ -643,12 +762,17 @@ function ComparePanel({ savedJobs, onClose }: { savedJobs: SavedJob[]; onClose: 
           </Button>
         </CardHeader>
         <CardContent className="overflow-auto">
-          <div className="grid gap-4" style={{ gridTemplateColumns: `repeat(${savedJobs.length}, 1fr)` }}>
+          <div
+            className="grid gap-4"
+            style={{gridTemplateColumns: `repeat(${savedJobs.length}, 1fr)`}}
+          >
             {/* Headers */}
             {savedJobs.map(job => (
               <div key={job.id} className="text-center">
                 <h3 className="font-semibold">{job.jobData.title}</h3>
-                <p className="text-sm text-muted-foreground">{job.jobData.company}</p>
+                <p className="text-sm text-muted-foreground">
+                  {job.jobData.company}
+                </p>
               </div>
             ))}
 
@@ -672,9 +796,9 @@ function ComparePanel({ savedJobs, onClose }: { savedJobs: SavedJob[]; onClose: 
                   <span>{job.jobData.matchRate}%</span>
                 </div>
                 <div className="w-full bg-muted rounded-full h-2">
-                  <div 
+                  <div
                     className="bg-green-600 h-2 rounded-full"
-                    style={{ width: `${job.jobData.matchRate}%` }}
+                    style={{width: `${job.jobData.matchRate}%`}}
                   ></div>
                 </div>
               </div>
@@ -701,10 +825,15 @@ function ComparePanel({ savedJobs, onClose }: { savedJobs: SavedJob[]; onClose: 
             <div className="font-semibold">Your Priority</div>
             {savedJobs.map(job => (
               <div key={job.id}>
-                <Badge variant={
-                  job.priority === 'high' ? 'destructive' : 
-                  job.priority === 'medium' ? 'default' : 'secondary'
-                }>
+                <Badge
+                  variant={
+                    job.priority === 'high'
+                      ? 'destructive'
+                      : job.priority === 'medium'
+                      ? 'default'
+                      : 'secondary'
+                  }
+                >
                   {job.priority}
                 </Badge>
               </div>

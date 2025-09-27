@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 
 import { useState } from 'react';
@@ -20,7 +21,6 @@ import {
   CheckCircle2,
   Clock,
   ArrowUp,
-  ArrowDown,
   Eye,
   Star,
   TrendingUp,
@@ -29,6 +29,10 @@ import {
 import Link from 'next/link';
 
 import dashboardData from './data.json';
+
+type QuickActionVariant = 'primary' | 'secondary' | 'outline';
+type ActivityStatus = 'success' | 'upcoming' | 'unread' | 'info';
+type ActivityType = 'application' | 'message' | 'interview' | 'profile';
 
 interface QuickAction {
   title: string;
@@ -61,10 +65,42 @@ interface SkillMetric {
   demand: number;
 }
 
+function isValidQuickActionVariant(variant: string): variant is QuickActionVariant {
+  return ['primary', 'secondary', 'outline'].includes(variant);
+}
+
+function isValidActivityStatus(status: string): status is ActivityStatus {
+  return ['success', 'upcoming', 'unread', 'info'].includes(status);
+}
+
+function isValidActivityType(type: string): type is ActivityType {
+  return ['application', 'message', 'interview', 'profile'].includes(type);
+}
+
+// Data validation functions
+const validateQuickActions = (data: any[]): QuickAction[] => {
+  return data.map(action => ({
+    ...action,
+    variant: isValidQuickActionVariant(action.variant) ? action.variant : 'secondary'
+  }));
+};
+
+const validateRecentActivity = (data: any[]): RecentActivity[] => {
+  return data.map(activity => ({
+    ...activity,
+    type: isValidActivityType(activity.type) ? activity.type : 'application',
+    status: isValidActivityStatus(activity.status) ? activity.status : 'info'
+  }));
+};
+
 export default function DashboardPage() {
   const [stats] = useState(dashboardData.dashboardStats.summary);
-  const [recentActivity] = useState<RecentActivity[]>(dashboardData.dashboardStats.recentActivity);
-  const [quickActions] = useState<QuickAction[]>(dashboardData.dashboardStats.quickActions);
+  const [recentActivity] = useState<RecentActivity[]>(() => 
+    validateRecentActivity(dashboardData.dashboardStats.recentActivity)
+  );
+  const [quickActions] = useState<QuickAction[]>(() => 
+    validateQuickActions(dashboardData.dashboardStats.quickActions)
+  );
   const [performanceMetrics] = useState<PerformanceMetric[]>(dashboardData.dashboardStats.performanceMetrics.applicationsOverTime);
   const [skillMetrics] = useState<SkillMetric[]>(dashboardData.dashboardStats.performanceMetrics.skillMatchDistribution);
 

@@ -17,13 +17,9 @@ import {
   Star, 
   Copy, 
   Trash2, 
-  Settings,
   FileText,
-  Briefcase,
   Target,
   BarChart3,
-  CheckCircle2,
-  Upload,
   Share2
 } from 'lucide-react';
 
@@ -561,6 +557,7 @@ function NewProfileForm({ onClose, onSave, careerPaths }: {
           <div>
             <Label htmlFor="careerPath">Career Path</Label>
             <select
+            title="careerPath"
               id="careerPath"
               value={formData.careerPath}
               onChange={(e) => setFormData(prev => ({ ...prev, careerPath: e.target.value }))}
@@ -673,6 +670,7 @@ function EditProfileModal({ profile, onClose, onSave, careerPaths }: {
             <div>
               <Label htmlFor="edit-careerPath">Career Path</Label>
               <select
+              title="careerPath"
                 id="edit-careerPath"
                 value={formData.careerPath}
                 onChange={(e) => setFormData(prev => ({ ...prev, careerPath: e.target.value }))}
