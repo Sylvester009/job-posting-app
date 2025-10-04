@@ -140,10 +140,10 @@ export default function PipelinePage() {
   };
 
   // Get team member by ID
-  const getTeamMember = (memberId: string | null) => {
-    if (!memberId) return null;
-    return teamMembers.find(member => member.id === memberId);
-  };
+  const getTeamMember = (memberId: string | null): TeamMember | null => {
+  if (!memberId) return null;
+  return teamMembers.find(member => member.id === memberId) || null;
+};
 
   // Get stage by ID
   const getStage = (stageId: string) => {
