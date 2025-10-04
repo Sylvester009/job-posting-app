@@ -1,614 +1,1023 @@
-[
-  {
-    "id": 1,
-    "header": "Cover page",
-    "type": "Cover page",
-    "status": "In Process",
-    "target": "18",
-    "limit": "5",
-    "reviewer": "Eddie Lake"
-  },
-  {
-    "id": 2,
-    "header": "Table of contents",
-    "type": "Table of contents",
-    "status": "Done",
-    "target": "29",
-    "limit": "24",
-    "reviewer": "Eddie Lake"
-  },
-  {
-    "id": 3,
-    "header": "Executive summary",
-    "type": "Narrative",
-    "status": "Done",
-    "target": "10",
-    "limit": "13",
-    "reviewer": "Eddie Lake"
-  },
-  {
-    "id": 4,
-    "header": "Technical approach",
-    "type": "Narrative",
-    "status": "Done",
-    "target": "27",
-    "limit": "23",
-    "reviewer": "Jamik Tashpulatov"
-  },
-  {
-    "id": 5,
-    "header": "Design",
-    "type": "Narrative",
-    "status": "In Process",
-    "target": "2",
-    "limit": "16",
-    "reviewer": "Jamik Tashpulatov"
-  },
-  {
-    "id": 6,
-    "header": "Capabilities",
-    "type": "Narrative",
-    "status": "In Process",
-    "target": "20",
-    "limit": "8",
-    "reviewer": "Jamik Tashpulatov"
-  },
-  {
-    "id": 7,
-    "header": "Integration with existing systems",
-    "type": "Narrative",
-    "status": "In Process",
-    "target": "19",
-    "limit": "21",
-    "reviewer": "Jamik Tashpulatov"
-  },
-  {
-    "id": 8,
-    "header": "Innovation and Advantages",
-    "type": "Narrative",
-    "status": "Done",
-    "target": "25",
-    "limit": "26",
-    "reviewer": "Assign reviewer"
-  },
-  {
-    "id": 9,
-    "header": "Overview of EMR's Innovative Solutions",
-    "type": "Technical content",
-    "status": "Done",
-    "target": "7",
-    "limit": "23",
-    "reviewer": "Assign reviewer"
-  },
-  {
-    "id": 10,
-    "header": "Advanced Algorithms and Machine Learning",
-    "type": "Narrative",
-    "status": "Done",
-    "target": "30",
-    "limit": "28",
-    "reviewer": "Assign reviewer"
-  },
-  {
-    "id": 11,
-    "header": "Adaptive Communication Protocols",
-    "type": "Narrative",
-    "status": "Done",
-    "target": "9",
-    "limit": "31",
-    "reviewer": "Assign reviewer"
-  },
-  {
-    "id": 12,
-    "header": "Advantages Over Current Technologies",
-    "type": "Narrative",
-    "status": "Done",
-    "target": "12",
-    "limit": "0",
-    "reviewer": "Assign reviewer"
-  },
-  {
-    "id": 13,
-    "header": "Past Performance",
-    "type": "Narrative",
-    "status": "Done",
-    "target": "22",
-    "limit": "33",
-    "reviewer": "Assign reviewer"
-  },
-  {
-    "id": 14,
-    "header": "Customer Feedback and Satisfaction Levels",
-    "type": "Narrative",
-    "status": "Done",
-    "target": "15",
-    "limit": "34",
-    "reviewer": "Assign reviewer"
-  },
-  {
-    "id": 15,
-    "header": "Implementation Challenges and Solutions",
-    "type": "Narrative",
-    "status": "Done",
-    "target": "3",
-    "limit": "35",
-    "reviewer": "Assign reviewer"
-  },
-  {
-    "id": 16,
-    "header": "Security Measures and Data Protection Policies",
-    "type": "Narrative",
-    "status": "In Process",
-    "target": "6",
-    "limit": "36",
-    "reviewer": "Assign reviewer"
-  },
-  {
-    "id": 17,
-    "header": "Scalability and Future Proofing",
-    "type": "Narrative",
-    "status": "Done",
-    "target": "4",
-    "limit": "37",
-    "reviewer": "Assign reviewer"
-  },
-  {
-    "id": 18,
-    "header": "Cost-Benefit Analysis",
-    "type": "Plain language",
-    "status": "Done",
-    "target": "14",
-    "limit": "38",
-    "reviewer": "Assign reviewer"
-  },
-  {
-    "id": 19,
-    "header": "User Training and Onboarding Experience",
-    "type": "Narrative",
-    "status": "Done",
-    "target": "17",
-    "limit": "39",
-    "reviewer": "Assign reviewer"
-  },
-  {
-    "id": 20,
-    "header": "Future Development Roadmap",
-    "type": "Narrative",
-    "status": "Done",
-    "target": "11",
-    "limit": "40",
-    "reviewer": "Assign reviewer"
-  },
-  {
-    "id": 21,
-    "header": "System Architecture Overview",
-    "type": "Technical content",
-    "status": "In Process",
-    "target": "24",
-    "limit": "18",
-    "reviewer": "Maya Johnson"
-  },
-  {
-    "id": 22,
-    "header": "Risk Management Plan",
-    "type": "Narrative",
-    "status": "Done",
-    "target": "15",
-    "limit": "22",
-    "reviewer": "Carlos Rodriguez"
-  },
-  {
-    "id": 23,
-    "header": "Compliance Documentation",
-    "type": "Legal",
-    "status": "In Process",
-    "target": "31",
-    "limit": "27",
-    "reviewer": "Sarah Chen"
-  },
-  {
-    "id": 24,
-    "header": "API Documentation",
-    "type": "Technical content",
-    "status": "Done",
-    "target": "8",
-    "limit": "12",
-    "reviewer": "Raj Patel"
-  },
-  {
-    "id": 25,
-    "header": "User Interface Mockups",
-    "type": "Visual",
-    "status": "In Process",
-    "target": "19",
-    "limit": "25",
-    "reviewer": "Leila Ahmadi"
-  },
-  {
-    "id": 26,
-    "header": "Database Schema",
-    "type": "Technical content",
-    "status": "Done",
-    "target": "22",
-    "limit": "20",
-    "reviewer": "Thomas Wilson"
-  },
-  {
-    "id": 27,
-    "header": "Testing Methodology",
-    "type": "Technical content",
-    "status": "In Process",
-    "target": "17",
-    "limit": "14",
-    "reviewer": "Assign reviewer"
-  },
-  {
-    "id": 28,
-    "header": "Deployment Strategy",
-    "type": "Narrative",
-    "status": "Done",
-    "target": "26",
-    "limit": "30",
-    "reviewer": "Eddie Lake"
-  },
-  {
-    "id": 29,
-    "header": "Budget Breakdown",
-    "type": "Financial",
-    "status": "In Process",
-    "target": "13",
-    "limit": "16",
-    "reviewer": "Jamik Tashpulatov"
-  },
-  {
-    "id": 30,
-    "header": "Market Analysis",
-    "type": "Research",
-    "status": "Done",
-    "target": "29",
-    "limit": "32",
-    "reviewer": "Sophia Martinez"
-  },
-  {
-    "id": 31,
-    "header": "Competitor Comparison",
-    "type": "Research",
-    "status": "In Process",
-    "target": "21",
-    "limit": "19",
-    "reviewer": "Assign reviewer"
-  },
-  {
-    "id": 32,
-    "header": "Maintenance Plan",
-    "type": "Technical content",
-    "status": "Done",
-    "target": "16",
-    "limit": "23",
-    "reviewer": "Alex Thompson"
-  },
-  {
-    "id": 33,
-    "header": "User Personas",
-    "type": "Research",
-    "status": "In Process",
-    "target": "27",
-    "limit": "24",
-    "reviewer": "Nina Patel"
-  },
-  {
-    "id": 34,
-    "header": "Accessibility Compliance",
-    "type": "Legal",
-    "status": "Done",
-    "target": "18",
-    "limit": "21",
-    "reviewer": "Assign reviewer"
-  },
-  {
-    "id": 35,
-    "header": "Performance Metrics",
-    "type": "Technical content",
-    "status": "In Process",
-    "target": "23",
-    "limit": "26",
-    "reviewer": "David Kim"
-  },
-  {
-    "id": 36,
-    "header": "Disaster Recovery Plan",
-    "type": "Technical content",
-    "status": "Done",
-    "target": "14",
-    "limit": "17",
-    "reviewer": "Jamik Tashpulatov"
-  },
-  {
-    "id": 37,
-    "header": "Third-party Integrations",
-    "type": "Technical content",
-    "status": "In Process",
-    "target": "25",
-    "limit": "28",
-    "reviewer": "Eddie Lake"
-  },
-  {
-    "id": 38,
-    "header": "User Feedback Summary",
-    "type": "Research",
-    "status": "Done",
-    "target": "20",
-    "limit": "15",
-    "reviewer": "Assign reviewer"
-  },
-  {
-    "id": 39,
-    "header": "Localization Strategy",
-    "type": "Narrative",
-    "status": "In Process",
-    "target": "12",
-    "limit": "19",
-    "reviewer": "Maria Garcia"
-  },
-  {
-    "id": 40,
-    "header": "Mobile Compatibility",
-    "type": "Technical content",
-    "status": "Done",
-    "target": "28",
-    "limit": "31",
-    "reviewer": "James Wilson"
-  },
-  {
-    "id": 41,
-    "header": "Data Migration Plan",
-    "type": "Technical content",
-    "status": "In Process",
-    "target": "19",
-    "limit": "22",
-    "reviewer": "Assign reviewer"
-  },
-  {
-    "id": 42,
-    "header": "Quality Assurance Protocols",
-    "type": "Technical content",
-    "status": "Done",
-    "target": "30",
-    "limit": "33",
-    "reviewer": "Priya Singh"
-  },
-  {
-    "id": 43,
-    "header": "Stakeholder Analysis",
-    "type": "Research",
-    "status": "In Process",
-    "target": "11",
-    "limit": "14",
-    "reviewer": "Eddie Lake"
-  },
-  {
-    "id": 44,
-    "header": "Environmental Impact Assessment",
-    "type": "Research",
-    "status": "Done",
-    "target": "24",
-    "limit": "27",
-    "reviewer": "Assign reviewer"
-  },
-  {
-    "id": 45,
-    "header": "Intellectual Property Rights",
-    "type": "Legal",
-    "status": "In Process",
-    "target": "17",
-    "limit": "20",
-    "reviewer": "Sarah Johnson"
-  },
-  {
-    "id": 46,
-    "header": "Customer Support Framework",
-    "type": "Narrative",
-    "status": "Done",
-    "target": "22",
-    "limit": "25",
-    "reviewer": "Jamik Tashpulatov"
-  },
-  {
-    "id": 47,
-    "header": "Version Control Strategy",
-    "type": "Technical content",
-    "status": "In Process",
-    "target": "15",
-    "limit": "18",
-    "reviewer": "Assign reviewer"
-  },
-  {
-    "id": 48,
-    "header": "Continuous Integration Pipeline",
-    "type": "Technical content",
-    "status": "Done",
-    "target": "26",
-    "limit": "29",
-    "reviewer": "Michael Chen"
-  },
-  {
-    "id": 49,
-    "header": "Regulatory Compliance",
-    "type": "Legal",
-    "status": "In Process",
-    "target": "13",
-    "limit": "16",
-    "reviewer": "Assign reviewer"
-  },
-  {
-    "id": 50,
-    "header": "User Authentication System",
-    "type": "Technical content",
-    "status": "Done",
-    "target": "28",
-    "limit": "31",
-    "reviewer": "Eddie Lake"
-  },
-  {
-    "id": 51,
-    "header": "Data Analytics Framework",
-    "type": "Technical content",
-    "status": "In Process",
-    "target": "21",
-    "limit": "24",
-    "reviewer": "Jamik Tashpulatov"
-  },
-  {
-    "id": 52,
-    "header": "Cloud Infrastructure",
-    "type": "Technical content",
-    "status": "Done",
-    "target": "16",
-    "limit": "19",
-    "reviewer": "Assign reviewer"
-  },
-  {
-    "id": 53,
-    "header": "Network Security Measures",
-    "type": "Technical content",
-    "status": "In Process",
-    "target": "29",
-    "limit": "32",
-    "reviewer": "Lisa Wong"
-  },
-  {
-    "id": 54,
-    "header": "Project Timeline",
-    "type": "Planning",
-    "status": "Done",
-    "target": "14",
-    "limit": "17",
-    "reviewer": "Eddie Lake"
-  },
-  {
-    "id": 55,
-    "header": "Resource Allocation",
-    "type": "Planning",
-    "status": "In Process",
-    "target": "27",
-    "limit": "30",
-    "reviewer": "Assign reviewer"
-  },
-  {
-    "id": 56,
-    "header": "Team Structure and Roles",
-    "type": "Planning",
-    "status": "Done",
-    "target": "20",
-    "limit": "23",
-    "reviewer": "Jamik Tashpulatov"
-  },
-  {
-    "id": 57,
-    "header": "Communication Protocols",
-    "type": "Planning",
-    "status": "In Process",
-    "target": "15",
-    "limit": "18",
-    "reviewer": "Assign reviewer"
-  },
-  {
-    "id": 58,
-    "header": "Success Metrics",
-    "type": "Planning",
-    "status": "Done",
-    "target": "30",
-    "limit": "33",
-    "reviewer": "Eddie Lake"
-  },
-  {
-    "id": 59,
-    "header": "Internationalization Support",
-    "type": "Technical content",
-    "status": "In Process",
-    "target": "23",
-    "limit": "26",
-    "reviewer": "Jamik Tashpulatov"
-  },
-  {
-    "id": 60,
-    "header": "Backup and Recovery Procedures",
-    "type": "Technical content",
-    "status": "Done",
-    "target": "18",
-    "limit": "21",
-    "reviewer": "Assign reviewer"
-  },
-  {
-    "id": 61,
-    "header": "Monitoring and Alerting System",
-    "type": "Technical content",
-    "status": "In Process",
-    "target": "25",
-    "limit": "28",
-    "reviewer": "Daniel Park"
-  },
-  {
-    "id": 62,
-    "header": "Code Review Guidelines",
-    "type": "Technical content",
-    "status": "Done",
-    "target": "12",
-    "limit": "15",
-    "reviewer": "Eddie Lake"
-  },
-  {
-    "id": 63,
-    "header": "Documentation Standards",
-    "type": "Technical content",
-    "status": "In Process",
-    "target": "27",
-    "limit": "30",
-    "reviewer": "Jamik Tashpulatov"
-  },
-  {
-    "id": 64,
-    "header": "Release Management Process",
-    "type": "Planning",
-    "status": "Done",
-    "target": "22",
-    "limit": "25",
-    "reviewer": "Assign reviewer"
-  },
-  {
-    "id": 65,
-    "header": "Feature Prioritization Matrix",
-    "type": "Planning",
-    "status": "In Process",
-    "target": "19",
-    "limit": "22",
-    "reviewer": "Emma Davis"
-  },
-  {
-    "id": 66,
-    "header": "Technical Debt Assessment",
-    "type": "Technical content",
-    "status": "Done",
-    "target": "24",
-    "limit": "27",
-    "reviewer": "Eddie Lake"
-  },
-  {
-    "id": 67,
-    "header": "Capacity Planning",
-    "type": "Planning",
-    "status": "In Process",
-    "target": "21",
-    "limit": "24",
-    "reviewer": "Jamik Tashpulatov"
-  },
-  {
-    "id": 68,
-    "header": "Service Level Agreements",
-    "type": "Legal",
-    "status": "Done",
-    "target": "26",
-    "limit": "29",
-    "reviewer": "Assign reviewer"
-  }
-]
+{
+  "companyInfo": {
+    "name": "TechCorp Inc.",
+    "logo": "/company-logos/techcorp.svg",
+    "industry": "Software Development",
+    "size": "501-1000 employees",
+    "location": "San Francisco, CA",
+    "description": "Leading SaaS company building the future of work technology."
+  },
+  "jobPostings": [
+    {
+      "id": "job1",
+      "title": "Senior Frontend Developer",
+      "department": "Engineering",
+      "type": "Full-time",
+      "location": "Remote",
+      "salaryRange": "$120,000 - $140,000",
+      "experienceLevel": "Senior",
+      "status": "active",
+      "views": 245,
+      "applications": 34,
+      "matches": 12,
+      "datePosted": "2024-01-15",
+      "applicationDeadline": "2024-02-15",
+      "description": "We're looking for a Senior Frontend Developer to join our growing team...",
+      "requirements": ["5+ years React experience", "TypeScript proficiency", "Team leadership"],
+      "skills": ["React", "TypeScript", "Next.js", "Tailwind CSS", "Node.js"],
+      "pipeline": {
+        "applied": 34,
+        "screening": 15,
+        "interview": 8,
+        "offer": 2,
+        "hired": 1
+      }
+    }
+  ],
+  "applicants": [
+    {
+      "id": "app1",
+      "jobId": "job1",
+      "applicant": {
+        "id": "user1",
+        "name": "Sarah Chen",
+        "email": "sarah.chen@email.com",
+        "phone": "+1 (555) 123-4567",
+        "location": "San Francisco, CA",
+        "photo": "/avatars/sarah-chen.jpg",
+        "currentRole": "Senior Frontend Developer at TechStart",
+        "experience": "6 years",
+        "education": "BSc Computer Science - Stanford University"
+      },
+      "application": {
+        "appliedDate": "2024-01-18T10:30:00Z",
+        "status": "screening",
+        "coverLetter": "I'm excited to apply for the Senior Frontend Developer position...",
+        "resume": "/resumes/sarah-chen-resume.pdf",
+        "source": "WorkNest Platform"
+      },
+      "matchAnalysis": {
+        "overallScore": 94,
+        "skillMatch": 95,
+        "experienceMatch": 90,
+        "cultureFit": 92,
+        "requiredSkills": [
+          { "skill": "React", "match": "excellent", "years": 5 },
+          { "skill": "TypeScript", "match": "excellent", "years": 4 },
+          { "skill": "Next.js", "match": "good", "years": 3 },
+          { "skill": "Tailwind CSS", "match": "excellent", "years": 4 }
+        ],
+        "missingSkills": ["Node.js"],
+        "strengths": ["Strong React background", "TypeScript expertise", "Team leadership experience"],
+        "concerns": ["Limited backend experience"]
+      },
+      "screening": {
+        "aiScore": 92,
+        "flagged": false,
+        "notes": "Strong technical background, good cultural fit",
+        "screeningQuestions": [
+          { "question": "Years of React experience?", "answer": "5 years", "score": 5 },
+          { "question": "TypeScript proficiency?", "answer": "Expert", "score": 5 }
+        ]
+      }
+    },
+    {
+      "id": "app2",
+      "jobId": "job1",
+      "applicant": {
+        "id": "user2",
+        "name": "Marcus Johnson",
+        "email": "marcus.j@email.com",
+        "phone": "+1 (555) 987-6543",
+        "location": "Remote",
+        "photo": "/avatars/marcus-johnson.jpg",
+        "currentRole": "Frontend Lead at StartupGrid",
+        "experience": "4 years",
+        "education": "BSc Software Engineering - MIT"
+      },
+      "application": {
+        "appliedDate": "2024-01-17T14:20:00Z",
+        "status": "applied",
+        "coverLetter": "With 4 years of frontend development experience...",
+        "resume": "/resumes/marcus-johnson-resume.pdf",
+        "source": "LinkedIn"
+      },
+      "matchAnalysis": {
+        "overallScore": 87,
+        "skillMatch": 85,
+        "experienceMatch": 80,
+        "cultureFit": 95,
+        "requiredSkills": [
+          { "skill": "React", "match": "good", "years": 4 },
+          { "skill": "TypeScript", "match": "good", "years": 3 },
+          { "skill": "Next.js", "match": "excellent", "years": 3 },
+          { "skill": "Tailwind CSS", "match": "good", "years": 3 }
+        ],
+        "missingSkills": ["Node.js"],
+        "strengths": ["Fast learner", "Strong communication skills", "Startup experience"],
+        "concerns": ["Less senior experience", "Gaps in advanced TypeScript"]
+      },
+      "screening": {
+        "aiScore": 85,
+        "flagged": false,
+        "notes": "Good potential, strong cultural alignment",
+        "screeningQuestions": [
+          { "question": "Years of React experience?", "answer": "4 years", "score": 4 },
+          { "question": "TypeScript proficiency?", "answer": "Advanced", "score": 4 }
+        ]
+      }
+    },
+    {
+      "id": "app3",
+      "jobId": "job1",
+      "applicant": {
+        "id": "user3",
+        "name": "Emily Rodriguez",
+        "email": "emily.rodriguez@email.com",
+        "phone": "+1 (555) 456-7890",
+        "location": "New York, NY",
+        "photo": "/avatars/emily-rodriguez.jpg",
+        "currentRole": "Full Stack Developer at FinanceTech",
+        "experience": "7 years",
+        "education": "MSc Computer Science - Carnegie Mellon"
+      },
+      "application": {
+        "appliedDate": "2024-01-16T09:15:00Z",
+        "status": "interview",
+        "coverLetter": "As a full stack developer with 7 years of experience...",
+        "resume": "/resumes/emily-rodriguez-resume.pdf",
+        "source": "Company Website"
+      },
+      "matchAnalysis": {
+        "overallScore": 91,
+        "skillMatch": 88,
+        "experienceMatch": 95,
+        "cultureFit": 85,
+        "requiredSkills": [
+          { "skill": "React", "match": "excellent", "years": 6 },
+          { "skill": "TypeScript", "match": "good", "years": 3 },
+          { "skill": "Next.js", "match": "good", "years": 2 },
+          { "skill": "Tailwind CSS", "match": "good", "years": 3 },
+          { "skill": "Node.js", "match": "excellent", "years": 5 }
+        ],
+        "missingSkills": [],
+        "strengths": ["Full stack experience", "Strong backend skills", "Financial domain knowledge"],
+        "concerns": ["May be overqualified", "Higher salary expectations"]
+      },
+      "screening": {
+        "aiScore": 89,
+        "flagged": false,
+        "notes": "Very strong technically, good match for senior role",
+        "screeningQuestions": [
+          { "question": "Years of React experience?", "answer": "6 years", "score": 5 },
+          { "question": "TypeScript proficiency?", "answer": "Advanced", "score": 4 }
+        ]
+      }
+    },
+    {
+      "id": "app4",
+      "jobId": "job1",
+      "applicant": {
+        "id": "user4",
+        "name": "Alex Thompson",
+        "email": "alex.thompson@email.com",
+        "phone": "+1 (555) 234-5678",
+        "location": "Austin, TX",
+        "photo": "/avatars/alex-thompson.jpg",
+        "currentRole": "UI Developer at DesignStudio",
+        "experience": "3 years",
+        "education": "BSc Design & Technology - UT Austin"
+      },
+      "application": {
+        "appliedDate": "2024-01-19T16:45:00Z",
+        "status": "applied",
+        "coverLetter": "I'm passionate about creating beautiful user interfaces...",
+        "resume": "/resumes/alex-thompson-resume.pdf",
+        "source": "WorkNest Platform"
+      },
+      "matchAnalysis": {
+        "overallScore": 72,
+        "skillMatch": 70,
+        "experienceMatch": 65,
+        "cultureFit": 88,
+        "requiredSkills": [
+          { "skill": "React", "match": "good", "years": 3 },
+          { "skill": "TypeScript", "match": "basic", "years": 1 },
+          { "skill": "Next.js", "match": "basic", "years": 1 },
+          { "skill": "Tailwind CSS", "match": "excellent", "years": 3 }
+        ],
+        "missingSkills": ["Node.js"],
+        "strengths": ["Strong design background", "Excellent CSS skills", "Creative problem solver"],
+        "concerns": ["Limited TypeScript experience", "Less senior-level experience"]
+      },
+      "screening": {
+        "aiScore": 68,
+        "flagged": true,
+        "notes": "Strong on design side but lacks required TypeScript depth",
+        "screeningQuestions": [
+          { "question": "Years of React experience?", "answer": "3 years", "score": 3 },
+          { "question": "TypeScript proficiency?", "answer": "Beginner", "score": 2 }
+        ]
+      }
+    }
+  ],
+  "applicationStages": [
+    "applied",
+    "screening",
+    "interview",
+    "offer",
+    "hired",
+    "rejected"
+  ],
+  "messages": {
+    "conversations": [
+      {
+        "id": "conv1",
+        "applicantId": "user1",
+        "jobId": "job1",
+        "applicant": {
+          "id": "user1",
+          "name": "Sarah Chen",
+          "email": "sarah.chen@email.com",
+          "photo": "/avatars/sarah-chen.jpg",
+          "currentRole": "Senior Frontend Developer at TechStart"
+        },
+        "jobTitle": "Senior Frontend Developer",
+        "lastMessage": {
+          "content": "Looking forward to discussing the technical interview details tomorrow.",
+          "timestamp": "2024-01-20T14:30:00Z",
+          "sender": "applicant",
+          "read": true
+        },
+        "unreadCount": 0,
+        "status": "interview",
+        "lastActivity": "2024-01-20T14:30:00Z",
+        "scheduledInterviews": [
+          {
+            "id": "int1",
+            "date": "2024-01-25T14:00:00Z",
+            "type": "technical",
+            "status": "scheduled",
+            "duration": 60,
+            "participants": ["Sarah Chen", "John Doe (Recruiter)", "Tech Lead"],
+            "meetingLink": "https://meet.techcorp.com/interview-123"
+          }
+        ]
+      },
+      {
+        "id": "conv2",
+        "applicantId": "user2",
+        "jobId": "job1",
+        "applicant": {
+          "id": "user2",
+          "name": "Marcus Johnson",
+          "email": "marcus.j@email.com",
+          "photo": "/avatars/marcus-johnson.jpg",
+          "currentRole": "Frontend Lead at StartupGrid"
+        },
+        "jobTitle": "Senior Frontend Developer",
+        "lastMessage": {
+          "content": "Thanks for sending the coding challenge. I'll complete it by end of day.",
+          "timestamp": "2024-01-20T11:15:00Z",
+          "sender": "applicant",
+          "read": false
+        },
+        "unreadCount": 1,
+        "status": "screening",
+        "lastActivity": "2024-01-20T11:15:00Z",
+        "scheduledInterviews": []
+      },
+      {
+        "id": "conv3",
+        "applicantId": "user3",
+        "jobId": "job1",
+        "applicant": {
+          "id": "user3",
+          "name": "Emily Rodriguez",
+          "email": "emily.rodriguez@email.com",
+          "photo": "/avatars/emily-rodriguez.jpg",
+          "currentRole": "Full Stack Developer at FinanceTech"
+        },
+        "jobTitle": "Senior Frontend Developer",
+        "lastMessage": {
+          "content": "Are you available for a quick call to discuss the next steps?",
+          "timestamp": "2024-01-19T16:45:00Z",
+          "sender": "recruiter",
+          "read": true
+        },
+        "unreadCount": 0,
+        "status": "offer",
+        "lastActivity": "2024-01-19T16:45:00Z",
+        "scheduledInterviews": [
+          {
+            "id": "int2",
+            "date": "2024-01-22T10:00:00Z",
+            "type": "final",
+            "status": "completed",
+            "duration": 45,
+            "participants": ["Emily Rodriguez", "HR Manager", "Engineering Director"],
+            "feedback": "Strong candidate, good cultural fit"
+          }
+        ]
+      },
+      {
+        "id": "conv4",
+        "applicantId": "user4",
+        "jobId": "job1",
+        "applicant": {
+          "id": "user4",
+          "name": "Alex Thompson",
+          "email": "alex.thompson@email.com",
+          "photo": "/avatars/alex-thompson.jpg",
+          "currentRole": "UI Developer at DesignStudio"
+        },
+        "jobTitle": "Senior Frontend Developer",
+        "lastMessage": {
+          "content": "Thank you for your application. We'll review it and get back to you soon.",
+          "timestamp": "2024-01-18T09:20:00Z",
+          "sender": "recruiter",
+          "read": true
+        },
+        "unreadCount": 0,
+        "status": "applied",
+        "lastActivity": "2024-01-18T09:20:00Z",
+        "scheduledInterviews": []
+      }
+    ],
+    "messageTemplates": [
+      {
+        "id": "temp1",
+        "name": "Initial Contact",
+        "category": "outreach",
+        "subject": "Next steps for your application",
+        "body": "Hi {name},\n\nThank you for applying to the {position} position at {company}. We were impressed with your background and would like to schedule a quick call to learn more about your experience.\n\nPlease let me know your availability for a 30-minute conversation next week.\n\nBest regards,\n{recruiter_name}"
+      },
+      {
+        "id": "temp2",
+        "name": "Technical Interview Invite",
+        "category": "interview",
+        "subject": "Technical Interview Invitation - {position}",
+        "body": "Hi {name},\n\nCongratulations on moving forward in the process for the {position} role!\n\nWe'd like to invite you to a technical interview where we'll discuss your experience and work through some technical challenges.\n\nDate: {date}\nTime: {time}\nDuration: {duration}\nMeeting Link: {meeting_link}\n\nPlease confirm your availability.\n\nBest,\n{recruiter_name}"
+      },
+      {
+        "id": "temp3",
+        "name": "Offer Letter",
+        "category": "offer",
+        "subject": "Job Offer - {position} at {company}",
+        "body": "Dear {name},\n\nWe are delighted to extend an offer for the {position} position at {company}!\n\nPosition: {position}\nStart Date: {start_date}\nSalary: {salary}\nLocation: {location}\n\nPlease review the attached formal offer letter and let us know if you have any questions. We're excited about the possibility of you joining our team!\n\nBest regards,\n{recruiter_name}"
+      },
+      {
+        "id": "temp4",
+        "name": "Rejection",
+        "category": "rejection",
+        "subject": "Update on your application",
+        "body": "Hi {name},\n\nThank you for your interest in the {position} position at {company} and for taking the time to interview with us.\n\nWhile we were impressed with your qualifications, we have decided to move forward with another candidate whose experience more closely matches our current needs.\n\nWe appreciate your time and interest in {company} and wish you the best in your job search.\n\nSincerely,\n{recruiter_name}"
+      }
+    ],
+    "interviewTypes": [
+      "phone_screen",
+      "technical",
+      "cultural",
+      "final",
+      "manager",
+      "team"
+    ],
+    "durationOptions": [15, 30, 45, 60, 90, 120]
+  },
+  "pipeline": {
+    "stages": [
+      {
+        "id": "applied",
+        "name": "Applied",
+        "color": "blue",
+        "order": 1,
+        "description": "New applications to review"
+      },
+      {
+        "id": "screening",
+        "name": "Screening",
+        "color": "yellow",
+        "order": 2,
+        "description": "Phone screens and initial assessments"
+      },
+      {
+        "id": "interview",
+        "name": "Interview",
+        "color": "purple",
+        "order": 3,
+        "description": "Technical and cultural interviews"
+      },
+      {
+        "id": "offer",
+        "name": "Offer",
+        "color": "green",
+        "order": 4,
+        "description": "Offer extended and negotiation"
+      },
+      {
+        "id": "hired",
+        "name": "Hired",
+        "color": "gray",
+        "order": 5,
+        "description": "Successfully hired candidates"
+      },
+      {
+        "id": "rejected",
+        "name": "Rejected",
+        "color": "red",
+        "order": 6,
+        "description": "Not moving forward"
+      }
+    ],
+    "candidates": [
+      {
+        "id": "cand1",
+        "applicantId": "user1",
+        "jobId": "job1",
+        "currentStage": "interview",
+        "assignedTo": "rec1",
+        "priority": "high",
+        "tags": ["strong-technical", "good-culture-fit"],
+        "lastActivity": "2024-01-20T14:30:00Z",
+        "nextAction": "Technical interview - Jan 25, 2:00 PM",
+        "notes": [
+          {
+            "author": "John Doe",
+            "content": "Strong React background, excellent communication skills",
+            "timestamp": "2024-01-20T14:30:00Z",
+            "type": "feedback"
+          }
+        ],
+        "metrics": {
+          "daysInStage": 3,
+          "totalDaysInProcess": 12,
+          "interviewScore": 4.5,
+          "responseTime": "2 hours"
+        }
+      },
+      {
+        "id": "cand2",
+        "applicantId": "user2",
+        "jobId": "job1",
+        "currentStage": "screening",
+        "assignedTo": "rec2",
+        "priority": "medium",
+        "tags": ["fast-learner", "startup-experience"],
+        "lastActivity": "2024-01-19T11:15:00Z",
+        "nextAction": "Complete coding challenge by Jan 22",
+        "notes": [
+          {
+            "author": "Sarah Wilson",
+            "content": "Good potential, needs more TypeScript experience",
+            "timestamp": "2024-01-19T11:15:00Z",
+            "type": "screening"
+          }
+        ],
+        "metrics": {
+          "daysInStage": 5,
+          "totalDaysInProcess": 8,
+          "interviewScore": null,
+          "responseTime": "1 day"
+        }
+      },
+      {
+        "id": "cand3",
+        "applicantId": "user3",
+        "jobId": "job1",
+        "currentStage": "offer",
+        "assignedTo": "rec1",
+        "priority": "high",
+        "tags": ["full-stack", "financial-domain"],
+        "lastActivity": "2024-01-21T09:00:00Z",
+        "nextAction": "Send formal offer letter",
+        "notes": [
+          {
+            "author": "John Doe",
+            "content": "Excellent technical skills, strong cultural fit",
+            "timestamp": "2024-01-21T09:00:00Z",
+            "type": "final-feedback"
+          }
+        ],
+        "metrics": {
+          "daysInStage": 2,
+          "totalDaysInProcess": 18,
+          "interviewScore": 4.8,
+          "responseTime": "4 hours"
+        }
+      },
+      {
+        "id": "cand4",
+        "applicantId": "user4",
+        "jobId": "job1",
+        "currentStage": "applied",
+        "assignedTo": null,
+        "priority": "low",
+        "tags": ["design-background", "ui-focused"],
+        "lastActivity": "2024-01-22T16:45:00Z",
+        "nextAction": "Initial resume review",
+        "notes": [],
+        "metrics": {
+          "daysInStage": 1,
+          "totalDaysInProcess": 1,
+          "interviewScore": null,
+          "responseTime": "6 hours"
+        }
+      },
+      {
+        "id": "cand5",
+        "applicantId": "user5",
+        "jobId": "job1",
+        "currentStage": "interview",
+        "assignedTo": "rec2",
+        "priority": "medium",
+        "tags": ["backend-strong", "aws-expert"],
+        "lastActivity": "2024-01-20T16:20:00Z",
+        "nextAction": "System design interview - Jan 26",
+        "notes": [
+          {
+            "author": "Mike Chen",
+            "content": "Strong backend skills, needs frontend practice",
+            "timestamp": "2024-01-20T16:20:00Z",
+            "type": "technical"
+          }
+        ],
+        "metrics": {
+          "daysInStage": 4,
+          "totalDaysInProcess": 15,
+          "interviewScore": 4.2,
+          "responseTime": "1 day"
+        }
+      },
+      {
+        "id": "cand6",
+        "applicantId": "user6",
+        "jobId": "job1",
+        "currentStage": "rejected",
+        "assignedTo": "rec1",
+        "priority": "low",
+        "tags": ["junior", "needs-experience"],
+        "lastActivity": "2024-01-18T14:10:00Z",
+        "nextAction": "None",
+        "notes": [
+          {
+            "author": "John Doe",
+            "content": "Not enough React experience for senior role",
+            "timestamp": "2024-01-18T14:10:00Z",
+            "type": "rejection"
+          }
+        ],
+        "metrics": {
+          "daysInStage": 7,
+          "totalDaysInProcess": 7,
+          "interviewScore": 3.2,
+          "responseTime": "2 days"
+        }
+      }
+    ],
+    "teamMembers": [
+      {
+        "id": "rec1",
+        "name": "John Doe",
+        "role": "Senior Recruiter",
+        "email": "john.doe@techcorp.com",
+        "avatar": "/avatars/john-doe.jpg",
+        "workload": {
+          "activeCandidates": 12,
+          "upcomingInterviews": 4,
+          "pendingOffers": 2
+        }
+      },
+      {
+        "id": "rec2",
+        "name": "Sarah Wilson",
+        "role": "Recruiter",
+        "email": "sarah.wilson@techcorp.com",
+        "avatar": "/avatars/sarah-wilson.jpg",
+        "workload": {
+          "activeCandidates": 8,
+          "upcomingInterviews": 2,
+          "pendingOffers": 1
+        }
+      },
+      {
+        "id": "rec3",
+        "name": "Mike Chen",
+        "role": "Technical Recruiter",
+        "email": "mike.chen@techcorp.com",
+        "avatar": "/avatars/mike-chen.jpg",
+        "workload": {
+          "activeCandidates": 6,
+          "upcomingInterviews": 3,
+          "pendingOffers": 0
+        }
+      }
+    ],
+    "filters": {
+      "priorities": ["high", "medium", "low"],
+      "tags": ["strong-technical", "good-culture-fit", "fast-learner", "startup-experience", "full-stack", "design-background", "backend-strong", "junior"],
+      "jobs": ["job1", "job2", "job3"]
+    }
+  },
+  "team": {
+    "members": [
+      {
+        "id": "rec1",
+        "name": "John Doe",
+        "role": "Senior Recruiter",
+        "email": "john.doe@techcorp.com",
+        "avatar": "/avatars/john-doe.jpg",
+        "phone": "+1 (555) 123-4567",
+        "department": "Engineering Recruitment",
+        "hireDate": "2022-03-15",
+        "status": "active",
+        "workload": {
+          "activeCandidates": 12,
+          "upcomingInterviews": 4,
+          "pendingOffers": 2,
+          "hiresThisMonth": 3,
+          "completionRate": 85
+        },
+        "skills": ["Technical Screening", "Offer Negotiation", "Stakeholder Management"],
+        "currentAssignments": ["cand1", "cand3", "cand6"],
+        "calendar": {
+          "availableSlots": ["2024-01-25T14:00:00Z", "2024-01-26T10:00:00Z"],
+          "busySlots": ["2024-01-24T15:00:00Z"]
+        }
+      },
+      {
+        "id": "rec2",
+        "name": "Sarah Wilson",
+        "role": "Recruiter",
+        "email": "sarah.wilson@techcorp.com",
+        "avatar": "/avatars/sarah-wilson.jpg",
+        "phone": "+1 (555) 987-6543",
+        "department": "Engineering Recruitment",
+        "hireDate": "2023-01-10",
+        "status": "active",
+        "workload": {
+          "activeCandidates": 8,
+          "upcomingInterviews": 2,
+          "pendingOffers": 1,
+          "hiresThisMonth": 2,
+          "completionRate": 78
+        },
+        "skills": ["Candidate Sourcing", "Initial Screening", "Interview Coordination"],
+        "currentAssignments": ["cand2", "cand5"],
+        "calendar": {
+          "availableSlots": ["2024-01-24T11:00:00Z", "2024-01-25T09:00:00Z"],
+          "busySlots": ["2024-01-23T14:00:00Z"]
+        }
+      },
+      {
+        "id": "rec3",
+        "name": "Mike Chen",
+        "role": "Technical Recruiter",
+        "email": "mike.chen@techcorp.com",
+        "avatar": "/avatars/mike-chen.jpg",
+        "phone": "+1 (555) 456-7890",
+        "department": "Engineering Recruitment",
+        "hireDate": "2022-08-22",
+        "status": "active",
+        "workload": {
+          "activeCandidates": 6,
+          "upcomingInterviews": 3,
+          "pendingOffers": 0,
+          "hiresThisMonth": 1,
+          "completionRate": 92
+        },
+        "skills": ["Technical Assessments", "System Design Interviews", "Code Review"],
+        "currentAssignments": ["cand4"],
+        "calendar": {
+          "availableSlots": ["2024-01-23T13:00:00Z", "2024-01-26T15:00:00Z"],
+          "busySlots": ["2024-01-24T10:00:00Z"]
+        }
+      },
+      {
+        "id": "rec4",
+        "name": "Emily Rodriguez",
+        "role": "Recruitment Coordinator",
+        "email": "emily.rodriguez@techcorp.com",
+        "avatar": "/avatars/emily-rodriguez.jpg",
+        "phone": "+1 (555) 234-5678",
+        "department": "Operations",
+        "hireDate": "2023-05-30",
+        "status": "active",
+        "workload": {
+          "activeCandidates": 15,
+          "upcomingInterviews": 8,
+          "pendingOffers": 3,
+          "hiresThisMonth": 4,
+          "completionRate": 88
+        },
+        "skills": ["Interview Scheduling", "Candidate Communication", "Onboarding"],
+        "currentAssignments": [],
+        "calendar": {
+          "availableSlots": ["2024-01-23T09:00:00Z", "2024-01-24T14:00:00Z"],
+          "busySlots": ["2024-01-25T11:00:00Z"]
+        }
+      },
+      {
+        "id": "rec5",
+        "name": "Alex Thompson",
+        "role": "Recruiter",
+        "email": "alex.thompson@techcorp.com",
+        "avatar": "/avatars/alex-thompson.jpg",
+        "phone": "+1 (555) 345-6789",
+        "department": "Design Recruitment",
+        "hireDate": "2023-03-12",
+        "status": "away",
+        "workload": {
+          "activeCandidates": 4,
+          "upcomingInterviews": 1,
+          "pendingOffers": 0,
+          "hiresThisMonth": 0,
+          "completionRate": 65
+        },
+        "skills": ["Portfolio Review", "Design Challenges", "Creative Assessment"],
+        "currentAssignments": [],
+        "calendar": {
+          "availableSlots": [],
+          "busySlots": ["2024-01-23T09:00:00Z", "2024-01-24T14:00:00Z"]
+        }
+      }
+    ],
+    "departments": [
+      "Engineering Recruitment",
+      "Design Recruitment", 
+      "Product Recruitment",
+      "Sales Recruitment",
+      "Operations",
+      "Leadership"
+    ],
+    "roles": [
+      "Senior Recruiter",
+      "Recruiter", 
+      "Technical Recruiter",
+      "Recruitment Coordinator",
+      "Hiring Manager",
+      "Talent Partner"
+    ],
+    "collaboration": {
+      "sharedTemplates": [
+        {
+          "id": "temp1",
+          "name": "Technical Feedback Template",
+          "category": "feedback",
+          "fields": ["Technical Skills", "Problem Solving", "Communication", "Overall Score"]
+        },
+        {
+          "id": "temp2", 
+          "name": "Cultural Fit Assessment",
+          "category": "assessment",
+          "fields": ["Team Collaboration", "Company Values", "Growth Mindset", "Overall Fit"]
+        }
+      ],
+      "approvalWorkflows": [
+        {
+          "id": "workflow1",
+          "name": "Standard Engineering Hire",
+          "steps": ["Recruiter Screen", "Technical Interview", "Team Interview", "Hiring Manager", "Offer Approval"]
+        }
+      ]
+    },
+    "teamPerformance": {
+      "totalHires": 24,
+      "averageTimeToHire": 32,
+      "offerAcceptanceRate": 85,
+      "candidateSatisfaction": 4.5
+    }
+  },
+  "analytics": {
+    "timeMetrics": {
+      "timeToHire": {
+        "average": 32,
+        "byDepartment": {
+          "Engineering": 45,
+          "Design": 28,
+          "Product": 31,
+          "Sales": 21,
+          "Marketing": 25
+        },
+        "trend": [
+          { "month": "Oct 2023", "days": 38 },
+          { "month": "Nov 2023", "days": 35 },
+          { "month": "Dec 2023", "days": 33 },
+          { "month": "Jan 2024", "days": 32 }
+        ]
+      },
+      "timeInStages": {
+        "applied": 2,
+        "screening": 5,
+        "interview": 18,
+        "offer": 7
+      }
+    },
+    "sourceEffectiveness": {
+      "linkedin": { "applications": 150, "hires": 12, "conversion": 8.0, "costPerHire": 4500 },
+      "worknest": { "applications": 89, "hires": 8, "conversion": 9.0, "costPerHire": 1200 },
+      "company_website": { "applications": 45, "hires": 4, "conversion": 8.9, "costPerHire": 800 },
+      "referral": { "applications": 23, "hires": 6, "conversion": 26.1, "costPerHire": 500 },
+      "indeed": { "applications": 67, "hires": 3, "conversion": 4.5, "costPerHire": 3200 },
+      "glassdoor": { "applications": 34, "hires": 2, "conversion": 5.9, "costPerHire": 2800 }
+    },
+    "pipelineMetrics": {
+      "funnel": {
+        "applied": 408,
+        "screening": 156,
+        "interview": 67,
+        "offer": 18,
+        "hired": 15
+      },
+      "conversionRates": {
+        "screening": 38.2,
+        "interview": 42.9,
+        "offer": 26.9,
+        "hired": 83.3
+      },
+      "dropoffReasons": {
+        "skills_mismatch": 45,
+        "culture_fit": 23,
+        "salary_expectations": 18,
+        "location": 9,
+        "other": 5
+      }
+    },
+    "qualityMetrics": {
+      "candidateSatisfaction": 4.5,
+      "hiringManagerSatisfaction": 4.7,
+      "retentionRate": 92,
+      "performanceScores": {
+        "exceeds_expectations": 35,
+        "meets_expectations": 58,
+        "needs_improvement": 7
+      }
+    },
+    "diversityMetrics": {
+      "gender": {
+        "male": 62,
+        "female": 35,
+        "non_binary": 2,
+        "prefer_not_to_say": 1
+      },
+      "ethnicity": {
+        "white": 45,
+        "asian": 28,
+        "black": 12,
+        "hispanic": 10,
+        "other": 5
+      },
+      "ageGroups": {
+        "under_25": 8,
+        "25_34": 42,
+        "35_44": 32,
+        "45_54": 13,
+        "55_plus": 5
+      }
+    },
+    "costMetrics": {
+      "totalSpend": 125000,
+      "costPerHire": 8333,
+      "advertisingSpend": 45000,
+      "agencyFees": 35000,
+      "referralBonuses": 15000,
+      "otherCosts": 30000,
+      "roi": 3.2
+    },
+    "teamPerformance": {
+      "rec1": { "hires": 8, "completionRate": 92, "satisfaction": 4.8, "timeToHire": 28 },
+      "rec2": { "hires": 5, "completionRate": 85, "satisfaction": 4.5, "timeToHire": 35 },
+      "rec3": { "hires": 7, "completionRate": 88, "satisfaction": 4.6, "timeToHire": 31 }
+    },
+    "monthlyTrends": [
+      { "month": "Jul 2023", "applications": 85, "hires": 3, "timeToHire": 40 },
+      { "month": "Aug 2023", "applications": 92, "hires": 4, "timeToHire": 38 },
+      { "month": "Sep 2023", "applications": 78, "hires": 3, "timeToHire": 36 },
+      { "month": "Oct 2023", "applications": 105, "hires": 5, "timeToHire": 38 },
+      { "month": "Nov 2023", "applications": 98, "hires": 4, "timeToHire": 35 },
+      { "month": "Dec 2023", "applications": 65, "hires": 2, "timeToHire": 33 },
+      { "month": "Jan 2024", "applications": 120, "hires": 6, "timeToHire": 32 }
+    ]
+  },
+  "dashboard": {
+    "quickStats": {
+      "activeJobs": 8,
+      "totalApplications": 156,
+      "upcomingInterviews": 12,
+      "pendingOffers": 3,
+      "hiresThisMonth": 6,
+      "openPositions": 5
+    },
+    "recentActivity": [
+      {
+        "id": "act1",
+        "type": "application",
+        "title": "New Application Received",
+        "description": "Sarah Chen applied for Senior Frontend Developer",
+        "timestamp": "2024-01-22T14:30:00Z",
+        "priority": "high",
+        "actionRequired": true
+      },
+      {
+        "id": "act2",
+        "type": "interview",
+        "title": "Interview Scheduled",
+        "description": "Technical interview with Marcus Johnson",
+        "timestamp": "2024-01-22T11:15:00Z",
+        "priority": "medium",
+        "actionRequired": false
+      },
+      {
+        "id": "act3",
+        "type": "offer",
+        "title": "Offer Accepted",
+        "description": "Emily Rodriguez accepted the Product Designer offer",
+        "timestamp": "2024-01-21T16:45:00Z",
+        "priority": "high",
+        "actionRequired": false
+      },
+      {
+        "id": "act4",
+        "type": "message",
+        "title": "New Message",
+        "description": "Alex Thompson replied to your interview invitation",
+        "timestamp": "2024-01-21T14:20:00Z",
+        "priority": "medium",
+        "actionRequired": true
+      }
+    ],
+    "upcomingInterviews": [
+      {
+        "id": "int1",
+        "candidate": "Sarah Chen",
+        "job": "Senior Frontend Developer",
+        "date": "2024-01-25T14:00:00Z",
+        "type": "Technical",
+        "interviewers": ["John Doe", "Tech Lead"],
+        "status": "confirmed"
+      },
+      {
+        "id": "int2",
+        "candidate": "Marcus Johnson",
+        "job": "Full Stack Developer",
+        "date": "2024-01-24T10:00:00Z",
+        "type": "Cultural",
+        "interviewers": ["Sarah Wilson"],
+        "status": "confirmed"
+      },
+      {
+        "id": "int3",
+        "candidate": "David Kim",
+        "job": "DevOps Engineer",
+        "date": "2024-01-26T11:00:00Z",
+        "type": "Technical",
+        "interviewers": ["Mike Chen", "Engineering Manager"],
+        "status": "pending"
+      }
+    ],
+    "performanceMetrics": {
+      "timeToHire": 32,
+      "offerAcceptanceRate": 85,
+      "candidateSatisfaction": 4.5,
+      "diversityScore": 76,
+      "costPerHire": 8333
+    },
+    "quickActions": [
+      {
+        "title": "Post New Job",
+        "description": "Create a new job opening",
+        "icon": "Briefcase",
+        "link": "/recruiter/jobs",
+        "count": 0,
+        "variant": "primary"
+      },
+      {
+        "title": "Review Applications",
+        "description": "12 new applications to review",
+        "icon": "Users",
+        "link": "/recruiter/applications",
+        "count": 12,
+        "variant": "secondary"
+      },
+      {
+        "title": "Schedule Interview",
+        "description": "Schedule new interviews",
+        "icon": "Calendar",
+        "link": "/recruiter/messages",
+        "count": 3,
+        "variant": "secondary"
+      },
+      {
+        "title": "Team Updates",
+        "description": "2 team members need attention",
+        "icon": "UserCheck",
+        "link": "/recruiter/team",
+        "count": 2,
+        "variant": "outline"
+      }
+    ]
+  },
+  "departments": ["Engineering", "Design", "Product", "Marketing", "Sales", "Operations", "HR"],
+  "jobTypes": ["Full-time", "Part-time", "Contract", "Internship", "Freelance"],
+  "experienceLevels": ["Intern", "Entry-level", "Mid-level", "Senior", "Lead", "Executive"],
+  "locations": ["Remote", "San Francisco, CA", "New York, NY", "Austin, TX", "Chicago, IL", "Boston, MA"]
+}
